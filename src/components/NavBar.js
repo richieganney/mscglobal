@@ -11,14 +11,13 @@ class NavBar extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                     <Nav.Link href="#tables">Tables & Results</Nav.Link>
-                    <Nav.Link href="#reports">Match Reports & Gossip</Nav.Link>
                     <NavDropdown title="Season Highlights" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">2018/2019</NavDropdown.Item>
                     </NavDropdown>
                     </Nav>
                     <Nav>
-                    <Nav.Link href="#deets">Team Bios</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
+                    <Nav.Link href="#team-bios">Team Bios</Nav.Link>
+                    <Nav.Link eventKey={2} href="#meet-committee">
                     Meet the Committee
                     </Nav.Link>
                     </Nav>
