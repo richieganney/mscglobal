@@ -6,19 +6,19 @@ class NavBar extends Component {
         return (
             <div>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="#home">MSC South West Division 3</Navbar.Brand>
+                <Navbar.Brand href="/">MSC South West Division 3</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                    <Nav.Link href="#tables">Tables & Results</Nav.Link>
+                    <Nav.Link href="/tables">Tables & Results</Nav.Link>
                     <NavDropdown title="Season Highlights" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">2018/2019</NavDropdown.Item>
+                    <NavDropdown.Item href="/action/3.1">2018/2019</NavDropdown.Item>
                     </NavDropdown>
                     </Nav>
                     <Nav>
-                    <Nav.Link href="#team-bios">Team Bios</Nav.Link>
-                    <Nav.Link eventKey={2} href="#meet-committee">
-                    Meet the Committee
+                    <Nav.Link href="/team-bios">Team Bios</Nav.Link>
+                    <Nav.Link eventKey={2} href="/about">
+                    About
                     </Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
