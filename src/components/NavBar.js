@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import Squash from '../team_photos/squash.jpg'
 
 class NavBar extends Component {
     render() {
         return (
             <div>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="/">MSC South West Division 3</Navbar.Brand>
+                <Navbar.Brand href="/">
+                <img
+                    src={Squash}
+                    alt="Squash Logo"
+                    className="rounded-circle z-depth-1 img-fluid"
+                    width={40}
+                    height={20}
+                />
+                </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
