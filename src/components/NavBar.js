@@ -21,7 +21,7 @@ class NavBar extends Component {
                     <Nav className="mr-auto">
                     <Nav.Link href="/tables">Tables & Results</Nav.Link>
                     <NavDropdown title="Season Highlights" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="/action/3.1">2018/2019</NavDropdown.Item>
+                    <NavDropdown.Item href="/action/18-19">2018/2019</NavDropdown.Item>
                     </NavDropdown>
                     </Nav>
                     <Nav>
