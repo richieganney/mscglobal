@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import Squash from '../team_photos/squash.jpg'
+import Squash from '../photos_and_videos/squash.jpg'
 
 class NavBar extends Component {
     render() {

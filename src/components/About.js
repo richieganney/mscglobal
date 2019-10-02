@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 import '../styles.css'
 import Figure from 'react-bootstrap/Figure'
-import Charlie from "../team_photos/charlie.jpg"
-import Jinks from "../team_photos/jinks.jpg"
-import Lawson from "../team_photos/lawson.jpg"
-import Mango from "../team_photos/mango.jpg"
-import Packers from "../team_photos/packers.jpg"
-import Pete from "../team_photos/pete.jpg"
-import Richie from "../team_photos/richie.jpg"
-import Seabrook from "../team_photos/seabrook.jpg"
+import Charlie from "../photos_and_videos/charlie.jpg"
+import Jinks from "../photos_and_videos/jinks.jpg"
+import Lawson from "../photos_and_videos/lawson.jpg"
+import Mango from "../photos_and_videos/mango.jpg"
+import Packers from "../photos_and_videos/packers.jpg"
+import Pete from "../photos_and_videos/pete.jpg"
+import Richie from "../photos_and_videos/richie.jpg"
+import Seabrook from "../photos_and_videos/seabrook.jpg"
 
 class About extends Component {
     render() {

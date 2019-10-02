@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
+import Rovers from '../photos_and_videos/rovers.jpeg'
 
 class TablesAndResults extends Component {
     render() {

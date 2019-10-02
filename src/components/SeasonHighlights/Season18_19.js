@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Titanic from "../../team_photos/titanic.mp4"
-import RacketGate from "../../team_photos/racketGate.mp4"
-import brumbiesUpset from "../../team_photos/brumbiesUpset.mp4"
+import Titanic from "../../photos_and_videos/titanic.mp4"
+import RacketGate from "../../photos_and_videos/racketGate.mp4"
+import brumbiesUpset from "../../photos_and_videos/brumbiesUpset.mp4"
+import ottersVmangos from "../../photos_and_videos/ottersVmangos.mp4"
 
 class Season18_19 extends Component {
     render() {
@@ -27,6 +28,13 @@ class Season18_19 extends Component {
                     <source src={brumbiesUpset} type="video/mp4"></source>
                     </video>
                 <p>Here is a video of the brumbies looking very sad after throwing away an absolute sitter.</p>
+                </div>
+
+                <div>
+                    <video controls style={videoStyle}>
+                    <source src={ottersVmangos} type="video/mp4"></source>
+                    </video>
+                    <p>Otters V Mangos. This is to remind fans of Watergate, a much more horrific situation than the more commonly known Watergate during Nixons administration. Unfortunately this is not actual footage.</p>
                 </div>
             </div>
         );

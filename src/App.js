@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import About from './components/About'
 import TablesAndResults from './components/TablesAndResults'
 import Season18_19 from './components/SeasonHighlights/Season18_19'
+import HomePage from './components/Homepage/Fixtures';
 import './styles.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/about" component={About} />
         <Route path="/tables" component={TablesAndResults} />
         <Route path="/action/18-19" component={Season18_19} />
