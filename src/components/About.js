@@ -167,7 +167,7 @@ class About extends Component {
                             />
                             </Figure>
                         <h5 className="font-weight-bold mt-4 mb-3">Richie Ganney</h5>
-                        <p className="text-uppercase blue-text">Treasurer and CTO</p>
+                        <p className="text-uppercase blue-text">Treasurer</p>
                         <ul className="list-unstyled mb-0">
                             <a href="https://www.linkedin.com/in/richie-ganney-26965063/" className="p-2 fa-lg">
                             <MDBIcon fab icon="linkedin" className="blue-text" />

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
-import Rovers from '../photos_and_videos/rovers.jpeg'
 
-class TablesAndResults extends Component {
+class TablesAndResults18_19 extends Component {
     render() {
         return (
             <div>
-                <h1>South West Division 3 Tables</h1><br></br>
                 <h2>2018/2019</h2>
                 <Table responsive>
                     <thead>
@@ -112,4 +110,4 @@ const style = {
     backgroundColor: '#65BFCA'
 }
 
-export default TablesAndResults;
+export default TablesAndResults18_19;
