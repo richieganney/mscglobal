@@ -17,6 +17,7 @@ class Season18_19 extends Component {
                     <source src={Titanic} type="video/mp4"></source>
                     </video>
                 <p>Commonly dubbed the 'titanic rally', this feirce battle between Clive and Ned resulted in a draw, with both teams taking home a valubale point. As followers of the league will know, these two teams had to retire shortly after ths match. </p>
+                
                 </div><br></br>
 
                 <div>
