@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import Squash from '../photos_and_videos/squash.jpg'
+import MSC from '../photos_and_videos/msc.png'
 
 class NavBar extends Component {
     render() {
@@ -9,11 +9,11 @@ class NavBar extends Component {
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand href="/">
                 <img
-                    src={Squash}
+                    src={MSC}
                     alt="Squash Logo"
                     className="rounded-circle z-depth-1 img-fluid"
-                    width={40}
-                    height={20}
+                    width={45}
+                    height={10}
                 />
                 </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
