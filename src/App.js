@@ -7,7 +7,6 @@ import Homepage from './components/Homepage/Homepage';
 import './styles.css'
 import AllTables from './components/TablesAndResults/AllTables';
 import AllTeams from './components/AllTeams';
-import Background from './photos_and_videos/background.jpeg'
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <Route style={backgroundStyle} exact path="/" component={Homepage} />
+        <Route exact path="/" component={Homepage} />
         <Route exact path="/about" component={About} />
         <Route path="/tables" component={AllTables} />
         <Route path="/season/18-19" component={Season18_19} />
@@ -24,10 +23,6 @@ function App() {
     </div>
     </Router>
   );
-}
-
-const backgroundStyle = {
-  backgroundImage: `url(${Background})`
 }
 
 export default App;
