@@ -7,7 +7,7 @@ import Watergate from './photos_and_videos/watergate.jpeg'
 import Mlady from './photos_and_videos/mlady.jpeg'
 import Balls from './photos_and_videos/balls.jpeg'
 import DelfonsoMango from './photos_and_videos/delfonso_mango.jpeg'
-import Guinness from './photos_and_videos/guinness.jpeg'
+import Titanic from './photos_and_videos/titanic.jpeg'
 import './styles.css'
 
 class PhotoGallery extends Component {
@@ -15,6 +15,9 @@ class PhotoGallery extends Component {
         const images = [
             {
               original: `${Beers}`,
+            },
+            {
+              original: `${Titanic}`
             },
             {
               original: `${MeAndFan}`,
