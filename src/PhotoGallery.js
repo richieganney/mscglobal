@@ -15,41 +15,30 @@ class PhotoGallery extends Component {
         const images = [
             {
               original: `${Beers}`,
-              thumbnail: `${Beers}`,
             },
             {
               original: `${MeAndFan}`,
-              thumbnail: `${MeAndFan}`,
             },
             {
               original: `${RichieAndLawson}`,
-              thumbnail: `${RichieAndLawson}`,
             },
             {
               original: `${Watergate}`,
-              thumbnail: `${Watergate}`,
             },
             {
-              original: `${Mlady}`,
-              thumbnail: `${Mlady}`,
+              original: `${Mlady}`,   
             },
             {
               original: `${Balls}`,
-              thumbnail: `${Balls}`,
             },
             {
               original: `${DelfonsoMango}`,
-              thumbnail: `${DelfonsoMango}`,
-            },
-            {
-              original: `${Guinness}`,
-              thumbnail: `${Guinness}`,
-            },
+            }
           ];
 
         return (
             <div>
-                <ImageGallery items={images} />
+                <ImageGallery items={images} autoPlay slideInterval={4000} slideDuration={2000} />
             </div>
         );
     }
