@@ -14,8 +14,9 @@ class AllTables extends Component {
                 <TablesAndResults19_20/>
                 <TablesAndResults18_19/>
                 </Tab>
+                
                 <Tab eventKey="results" title="Results">
-    
+
                 </Tab>
                 </Tabs>
             </div>
