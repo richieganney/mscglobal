@@ -5,7 +5,7 @@ class Fixtures extends Component {
     render() {
         return (
             <div>
-                <div class="sidenav">
+                <div className="sidenav">
                     <h4 style={style}>Fixtures</h4><br></br>
                     <Table responsive>
                         <tr style={style}>
