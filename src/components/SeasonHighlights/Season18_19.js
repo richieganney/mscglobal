@@ -29,7 +29,7 @@ class Season18_19 extends Component {
                         <img className="videoThumb" src={vid5}></img></a>
                         </figure>
                         <h2>Titanic Rally</h2>
-                        <p>Commonly dubbed the 'titanic rally', this fierce battle between Clive and Ned resulted in a draw, with both teams taking home a valubale point. As followers of the league will know, these two teams had to retire shortly after ths match. </p>
+                        <p>Commonly dubbed the 'titanic rally', this fierce battle between Clive and Ned resulted in a draw, with both teams taking home a valubale point. As followers of the league will know, these two teams sadly had to retire shortly after ths match. </p>
                   </article>
 
                   <article className="video" style={articleStyle}>
@@ -38,7 +38,7 @@ class Season18_19 extends Component {
                         <img className="videoThumb" src={vid6}></img></a>
                         </figure>
                         <h2>Racketgate</h2>
-                        <p>Ah racketgate. A lot of debate still surrounds the lack of punishment given to Rovers. Peter Brumby came under massive scrutiny following this event but thankfully game regulation has tightened since then.</p>
+                        <p>Ah Racketgate. A lot of debate still surrounds the lack of punishment given to Rovers. Peter Brumby came under massive scrutiny following this event but thankfully game regulation has tightened up since then.</p>
                   </article>
 
                   <article className="video" style={articleStyle}>
@@ -47,7 +47,7 @@ class Season18_19 extends Component {
                         <img className="videoThumb" src={vid4}></img></a>
                         </figure>
                         <h2>Sad Brumbies</h2>
-                        <p>Here is a video of the brumbies looking very sad after throwing away an absolute sitter.</p>
+                        <p>Here is a video of Brumbies looking very sad after throwing away an absolute sitter.</p>
                   </article>
 
                   <article className="video" style={articleStyle}>
@@ -56,7 +56,7 @@ class Season18_19 extends Component {
                         <img className="videoThumb" src={vid3}></img></a>
                         </figure>
                         <h2>Watergate</h2>
-                        <p>Otters V Mangos. This is to remind fans of Watergate, a much more horrific and well known situation than Nixon's Watergate. Unfortunately this is not actual footage of Watergate.</p>
+                        <p>Otters V Mangos. This is to remind fans of Watergate, a much more horrific and well known situation than Richard Nixon's Watergate. Unfortunately this is not actual footage of Watergate.</p>
                   </article>
 
                   <article className="video" style={articleStyle}>
