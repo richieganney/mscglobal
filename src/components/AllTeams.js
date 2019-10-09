@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import {  MDBRow, MDBCol, MDBCard, MDBCardBody } from 'mdbreact';
 import Figure from 'react-bootstrap/Figure'
-import Brumbies from '../photos_and_videos/brumbies.jpeg';
-import FiveClive from '../photos_and_videos/fiveclive.jpeg';
-import Mangos from '../photos_and_videos/mangos.jpeg';
-import NedJinks from '../photos_and_videos/nedjinks.jpeg';
-import Packers from '../photos_and_videos/packers.jpeg';
-import Rovers from '../photos_and_videos/rovers.jpeg';
-import SeaOtters from '../photos_and_videos/seaotters.jpeg';
-import Esampdoria from '../photos_and_videos/esampdoria.jpeg';
+import Brumbies from '../photos_and_videos/all_teams/brumbies.jpeg';
+import FiveClive from '../photos_and_videos/all_teams/fiveclive.jpeg';
+import Mangos from '../photos_and_videos/all_teams/mangos.jpeg';
+import NedJinks from '../photos_and_videos/all_teams/nedjinks.jpeg';
+import Packers from '../photos_and_videos/all_teams/packers.jpeg';
+import Rovers from '../photos_and_videos/all_teams/rovers.jpeg';
+import SeaOtters from '../photos_and_videos/all_teams/seaotters.jpeg';
+import Esampdoria from '../photos_and_videos/all_teams/esampdoria.jpeg';
 
 class AllTeams extends Component {
     render() {

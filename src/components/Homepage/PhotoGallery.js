@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
-import Beers from './photos_and_videos/beers.jpeg'
-import MeAndFan from './photos_and_videos/me_and_fan.jpeg'
-import RichieAndLawson from './photos_and_videos/richie_and_lawson.jpeg'
-import Watergate from './photos_and_videos/watergate.jpeg'
-import Mlady from './photos_and_videos/mlady.jpeg'
-import Balls from './photos_and_videos/balls.jpeg'
-import DelfonsoMango from './photos_and_videos/delfonso_mango.jpeg'
-import Titanic from './photos_and_videos/titanic.jpeg'
-import './styles.css'
+import Beers from '../../photos_and_videos/homepage/beers.jpeg'
+import MeAndFan from '../../photos_and_videos/homepage/me_and_fan.jpeg'
+import RichieAndLawson from '../../photos_and_videos/homepage/richie_and_lawson.jpeg'
+import Watergate from '../../photos_and_videos/homepage/watergate.jpeg'
+import Mlady from '../../photos_and_videos/homepage/mlady.jpeg'
+import Balls from '../../photos_and_videos/homepage/balls.jpeg'
+import DelfonsoMango from '../../photos_and_videos/homepage/delfonso_mango.jpeg'
+import Titanic from '../../photos_and_videos/homepage/titanic.jpeg'
+import '../../styles.css'
 
 class PhotoGallery extends Component {
     render() {
