@@ -24,7 +24,7 @@ class TablesAndResults18_19 extends Component {
                     <tbody>
                         <tr style={style}>
                         <td>1</td>
-                        <th>Richie's Rovers</th>
+                        <th>Richie's Rovers (w)</th>
                         <td>5</td>
                         <td>5</td>
                         <td>0</td>

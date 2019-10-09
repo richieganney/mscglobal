@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import TablesAndResults18_19 from './TablesAndResults18_19';
 import TablesAndResults19_20 from './TablesAndResults19_20';
+import Results18_19 from './Results18_19'
+import Results19_20 from './Results19_20';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 
@@ -16,7 +18,8 @@ class AllTables extends Component {
                 </Tab>
                 
                 <Tab eventKey="results" title="Results">
-
+                <Results19_20 />
+                <Results18_19 />
                 </Tab>
                 </Tabs>
             </div>

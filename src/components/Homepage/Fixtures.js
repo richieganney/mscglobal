@@ -9,11 +9,11 @@ class Fixtures extends Component {
                     <h4 style={style}>Fixtures</h4><br></br>
                     <Table responsive>
                         <tr style={style}>
-                        <th style={spanStyle}>TUESDAY 8th OCTOBER 2019</th>
+                        <th style={dateStyle}>TBC</th>
                         </tr>
 
                         <tr style={style}>
-                        <th style={style}>Rovers <span style={spanStyle}>20:15</span> Esampdoria</th>
+                        <th style={style}>TBC <span style={spanStyle}>20:15</span> TBC</th>
                         </tr>
 
                         <tr style={style}>
@@ -31,7 +31,13 @@ const style = {
 }
 
 const spanStyle = {
-    backgroundColor: 'grey'
+    backgroundColor: '#CBD2D3',
+    borderRadius: '25px',
+    padding: '5px'
+}
+
+const dateStyle = {
+    backgroundColor: '#CBD2D3'
 }
 
 export default Fixtures;
