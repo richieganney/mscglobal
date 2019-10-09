@@ -7,6 +7,7 @@ import ottersVmangos from "../../photos_and_videos/ottersVmangos.mp4";
 import EsamPackersFinal from "../../photos_and_videos/esam_packers_final.mp4";
 import PackersBrumbies from "../../photos_and_videos/packers_brumbies.mp4";
 import TitanicWithMusic from "../../photos_and_videos/titanic_with_music.mp4";
+import finalRallyVid from "../../photos_and_videos/final_rally_2.mp4";
 import vid1 from "../../photos_and_videos/vid1.png";
 import vid2 from "../../photos_and_videos/vid2.png";
 import vid3 from "../../photos_and_videos/vid3.png";
@@ -14,6 +15,7 @@ import vid4 from "../../photos_and_videos/vid4.png";
 import vid5 from "../../photos_and_videos/vid5.png";
 import vid6 from "../../photos_and_videos/vid6.png";
 import vid7 from "../../photos_and_videos/vid7.png";
+import finalRallyPic from "../../photos_and_videos/final_rally_2.png";
 
 class Season18_19 extends Component {
     render() {
@@ -22,6 +24,16 @@ class Season18_19 extends Component {
             <div>
                 
                   <h1>Some of the magic from the 2018/2019 season</h1>
+
+
+                  <article className="video" style={articleStyle}>
+                        <figure>
+                        <a className="fancybox fancybox.iframe" href={finalRallyVid} >
+                        <img className="videoThumb" src={finalRallyPic}></img></a>
+                        </figure>
+                        <h2>Playoff Final - Rovers v Esampdoria</h2>
+                        <p>One of the many fine rallies from the final. What a fantastic end to a fantastic season. Both teams fought incredibly hard but Rovers came out on top to win the MSC South West Division 3 title.</p>
+                  </article>
 
                   <article className="video" style={articleStyle}>
                         <figure>
