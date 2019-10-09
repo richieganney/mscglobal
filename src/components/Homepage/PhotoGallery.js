@@ -4,7 +4,6 @@ import Beers from '../../photos_and_videos/homepage/beers.jpeg'
 import MeAndFan from '../../photos_and_videos/homepage/me_and_fan.jpeg'
 import RichieAndLawson from '../../photos_and_videos/homepage/richie_and_lawson.jpeg'
 import Watergate from '../../photos_and_videos/homepage/watergate.jpeg'
-import Mlady from '../../photos_and_videos/homepage/mlady.jpeg'
 import Balls from '../../photos_and_videos/homepage/balls.jpeg'
 import DelfonsoMango from '../../photos_and_videos/homepage/delfonso_mango.jpeg'
 import Titanic from '../../photos_and_videos/homepage/titanic.jpeg'
@@ -27,9 +26,6 @@ class PhotoGallery extends Component {
             },
             {
               original: `${Watergate}`,
-            },
-            {
-              original: `${Mlady}`,   
             },
             {
               original: `${Balls}`,
