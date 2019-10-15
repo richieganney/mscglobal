@@ -143,13 +143,13 @@ class TablesAndResults19_20 extends Component {
                         <tr>
                         <td>10</td>
                         <th>The Sea Otters</th>
+                        <td>1</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>1</td>
+                        <td>8</td>
+                        <td>27</td>
+                        <td>-19</td>
                         <td>0</td>
                         </tr>
                     </tbody>
