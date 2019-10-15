@@ -75,7 +75,7 @@ class TablesAndResults19_20 extends Component {
                         <td>0</td>
                         </tr>
 
-                        <tr style={style}>
+                        <tr>
                         <td>5</td>
                         <th>Chadrington Stanley</th>
                         <td>0</td>
@@ -88,7 +88,7 @@ class TablesAndResults19_20 extends Component {
                         <td>0</td>
                         </tr>
 
-                        <tr style={style}>
+                        <tr>
                         <td>6</td>
                         <th>Cowracens</th>
                         <td>0</td>
@@ -101,9 +101,9 @@ class TablesAndResults19_20 extends Component {
                         <td>0</td>
                         </tr>
 
-                        <tr style={style}>
+                        <tr>
                         <td>7</td>
-                        <th>Jimbok Squash</th>
+                        <th>Fortuna Müzzeldorf</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -114,7 +114,7 @@ class TablesAndResults19_20 extends Component {
                         <td>0</td>
                         </tr>
 
-                        <tr style={style}>
+                        <tr>
                         <td>8</td>
                         <th>Richie's Rovers</th>
                         <td>0</td>
@@ -142,6 +142,19 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>10</td>
+                        <th>The Jimboks</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        </tr>
+
+                        <tr>
+                        <td>11</td>
                         <th>The Sea Otters</th>
                         <td>1</td>
                         <td>0</td>
