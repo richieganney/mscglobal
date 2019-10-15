@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import MSC from '../photos_and_videos/msc.png'
+import MSC from '../photos_and_videos/new_logo.png'
 
 class NavBar extends Component {
     render() {

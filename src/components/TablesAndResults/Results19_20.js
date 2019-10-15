@@ -8,11 +8,11 @@ class Results19_20 extends Component {
                 <Table responsive>
                     <h2>2019/2020</h2>
                     <tr style={style}>
-                    <th style={dateStyle}>TBC</th>
+                    <th style={dateStyle}>MONDAY 14th OCTOBER</th>
                     </tr>
 
                     <tr style={style}>
-                    <th style={style}>TBC <span style={spanStyle}>0 - 0</span> TBC</th>
+                    <th style={style}>Esampdoria <span style={spanStyle}>3 - 0</span> The Sea Otters</th>
                     </tr>
 
                     <tr style={style}>

@@ -107,7 +107,7 @@ class TablesAndResults18_19 extends Component {
 }
 
 const style = {
-    backgroundColor: '#65BFCA'
+    backgroundColor: '#7B67C9'
 }
 
 export default TablesAndResults18_19;

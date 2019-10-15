@@ -9,6 +9,10 @@ import Packers from '../photos_and_videos/all_teams/packers.jpeg';
 import Rovers from '../photos_and_videos/all_teams/rovers.jpeg';
 import SeaOtters from '../photos_and_videos/all_teams/seaotters.jpeg';
 import Esampdoria from '../photos_and_videos/all_teams/esampdoria.jpeg';
+import Jimbok from '../photos_and_videos/all_teams/jimbok.jpeg';
+import Murf from '../photos_and_videos/all_teams/bournmurf.jpeg';
+import Chadrington from '../photos_and_videos/all_teams/chadrington.jpeg';
+import Cowracens from '../photos_and_videos/all_teams/cowracens.jpeg';
 
 class AllTeams extends Component {
     render() {
@@ -122,6 +126,58 @@ class AllTeams extends Component {
                             />
                             </Figure>
                         <h5 className="font-weight-bold mt-4 mb-3">The Sea Otters</h5>
+                        </MDBCol>
+
+                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={200}
+                                alt="171x180"
+                                src={Murf}
+                                className="rounded-circle z-depth-1 img-fluid"
+                            />
+                            </Figure>
+                        <h5 className="font-weight-bold mt-4 mb-3">AFC Bournemurf</h5>
+                        </MDBCol>
+
+                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src={Chadrington}
+                                className="rounded-circle z-depth-1 img-fluid"
+                            />
+                            </Figure>
+                        <h5 className="font-weight-bold mt-4 mb-3">Chadrington Stanley</h5>
+                        </MDBCol>
+
+                                                <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src={Jimbok}
+                                className="rounded-circle z-depth-1 img-fluid"
+                            />
+                            </Figure>
+                        <h5 className="font-weight-bold mt-4 mb-3">Jimbok Squash</h5>
+                        </MDBCol>
+
+                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src={Cowracens}
+                                className="rounded-circle z-depth-1 img-fluid"
+                            />
+                            </Figure>
+                        <h5 className="font-weight-bold mt-4 mb-3">Cowracens</h5>
                         </MDBCol>
 
                     </MDBRow>
