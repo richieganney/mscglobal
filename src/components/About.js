@@ -10,6 +10,7 @@ import Packers from "../photos_and_videos/about/packers.jpg"
 import Pete from "../photos_and_videos/about/pete.jpg"
 import Richie from "../photos_and_videos/about/richie.jpg"
 import Seabrook from "../photos_and_videos/about/seabrook.jpg"
+import Murray from "../photos_and_videos/about/murray.jpeg"
 
 class About extends Component {
     render() {
@@ -195,6 +196,28 @@ class About extends Component {
                             <MDBIcon fab icon="linkedin" className="blue-text" />
                             </a>
                             <a href="https://www.instagram.com/gseabrook/" className="p-2 fa-lg">
+                            <MDBIcon fab icon="instagram" className="blue-text" />
+                            </a>
+                         </ul>
+                        </MDBCol>
+
+                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src={Murray}
+                                className="rounded-circle z-depth-1 img-fluid"
+                            />
+                            </Figure>
+                        <h5 className="font-weight-bold mt-4 mb-3">Alex Murray</h5>
+                        <p className="text-uppercase blue-text">Alumni Sec</p>
+                        <ul className="list-unstyled mb-0">
+                            <a href="https://www.linkedin.com/in/alex-murray-4b6141162/" className="p-2 fa-lg">
+                            <MDBIcon fab icon="linkedin" className="blue-text" />
+                            </a>
+                            <a href="https://www.instagram.com/alex_murray56/" className="p-2 fa-lg">
                             <MDBIcon fab icon="instagram" className="blue-text" />
                             </a>
                          </ul>

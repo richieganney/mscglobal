@@ -25,6 +25,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>1</td>
+                        <th>AFC Bournemurf</th>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>27</td>
+                        <td>8</td>
+                        <td>19</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr style={style}>
+                        <td>2</td>
                         <th>Esampdoria</th>
                         <td>1</td>
                         <td>1</td>
@@ -34,19 +47,6 @@ class TablesAndResults19_20 extends Component {
                         <td>8</td>
                         <td>19</td>
                         <td>3</td>
-                        </tr>
-
-                        <tr style={style}>
-                        <td>2</td>
-                        <th>AFC Bournemurf</th>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
                         </tr>
 
                         <tr style={style}>

@@ -14,6 +14,7 @@ import Murf from '../photos_and_videos/all_teams/bournmurf.jpeg';
 import Chadrington from '../photos_and_videos/all_teams/chadrington.jpeg';
 import Cowracens from '../photos_and_videos/all_teams/cowracens.jpeg';
 import Muzzeldorf from '../photos_and_videos/all_teams/muzzeldorf.jpeg';
+import Shorn from '../photos_and_videos/all_teams/shorn_hub.jpeg';
 
 class AllTeams extends Component {
     render() {
@@ -192,6 +193,19 @@ class AllTeams extends Component {
                             />
                             </Figure>
                         <h5 className="font-weight-bold mt-4 mb-3">Fortuna Müzzeldorf</h5>
+                        </MDBCol>
+
+                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src={Shorn}
+                                className="rounded-circle z-depth-1 img-fluid"
+                            />
+                            </Figure>
+                        <h5 className="font-weight-bold mt-4 mb-3">Shorn Hub</h5>
                         </MDBCol>
 
                     </MDBRow>
