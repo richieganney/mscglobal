@@ -51,20 +51,20 @@ class TablesAndResults19_20 extends Component {
 
                         <tr style={style}>
                         <td>3</td>
-                        <th>Brumbies</th>
+                        <th>Fortuna Müzzeldorf</th>
+                        <td>1</td>
+                        <td>1</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>27</td>
+                        <td>9</td>
+                        <td>18</td>
+                        <td>3</td>
                         </tr>
 
                         <tr style={style}>
                         <td>4</td>
-                        <th>Chadrington Stanley</th>
+                        <th>Brumbies</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -90,19 +90,6 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>6</td>
-                        <th>Fortuna Müzzeldorf</th>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        </tr>
-
-                        <tr>
-                        <td>7</td>
                         <th>Richie's Rovers</th>
                         <td>0</td>
                         <td>0</td>
@@ -115,7 +102,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>8</td>
+                        <td>7</td>
                         <th>The Greenberg Packers</th>
                         <td>0</td>
                         <td>0</td>
@@ -128,7 +115,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>9</td>
+                        <td>8</td>
                         <th>The Jimboks</th>
                         <td>0</td>
                         <td>0</td>
@@ -137,6 +124,19 @@ class TablesAndResults19_20 extends Component {
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
+                        <td>0</td>
+                        </tr>
+
+                        <tr>
+                        <td>9</td>
+                        <th>Chadrington Stanley</th>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>27</td>
+                        <td>-18</td>
                         <td>0</td>
                         </tr>
 
