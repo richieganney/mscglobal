@@ -25,6 +25,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>1</td>
+                        <th>Richie's Rovers</th>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>27</td>
+                        <td>5</td>
+                        <td>22</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr style={style}>
+                        <td>2</td>
                         <th>AFC Bournemurf</th>
                         <td>1</td>
                         <td>1</td>
@@ -37,7 +50,7 @@ class TablesAndResults19_20 extends Component {
                     </tr>
 
                     <tr style={style}>
-                        <td>2</td>
+                        <td>3</td>
                         <th>Esampdoria</th>
                         <td>1</td>
                         <td>1</td>
@@ -50,7 +63,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr style={style}>
-                        <td>3</td>
+                        <td>4</td>
                         <th>Fortuna Müzzeldorf</th>
                         <td>1</td>
                         <td>1</td>
@@ -62,8 +75,8 @@ class TablesAndResults19_20 extends Component {
                         <td>3</td>
                         </tr>
 
-                        <tr style={style}>
-                        <td>4</td>
+                        <tr>
+                        <td>5</td>
                         <th>Brumbies</th>
                         <td>0</td>
                         <td>0</td>
@@ -76,21 +89,8 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>5</td>
-                        <th>Cowracens</th>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        </tr>
-
-                        <tr>
                         <td>6</td>
-                        <th>Richie's Rovers</th>
+                        <th>Cowracens</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -129,19 +129,6 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>9</td>
-                        <th>Chadrington Stanley</th>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>9</td>
-                        <td>27</td>
-                        <td>-18</td>
-                        <td>0</td>
-                        </tr>
-
-                        <tr>
-                        <td>10</td>
                         <th>Alfonso Mango</th>
                         <td>1</td>
                         <td>0</td>
@@ -154,7 +141,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>11</td>
+                        <td>10</td>
                         <th>The Sea Otters</th>
                         <td>1</td>
                         <td>0</td>
@@ -163,6 +150,19 @@ class TablesAndResults19_20 extends Component {
                         <td>8</td>
                         <td>27</td>
                         <td>-19</td>
+                        <td>0</td>
+                        </tr>
+
+                        <tr>
+                        <td>11</td>
+                        <th>Chadrington Stanley</th>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>14</td>
+                        <td>54</td>
+                        <td>-40</td>
                         <td>0</td>
                         </tr>
                     </tbody>
