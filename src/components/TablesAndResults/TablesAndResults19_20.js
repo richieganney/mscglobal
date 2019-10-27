@@ -26,14 +26,14 @@ class TablesAndResults19_20 extends Component {
                     <tr style={style}>
                         <td>1</td>
                         <th>Richie's Rovers</th>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>27</td>
-                        <td>5</td>
-                        <td>22</td>
-                        <td>3</td>
+                        <td>54</td>
+                        <td>13</td>
+                        <td>41</td>
+                        <td>6</td>
                     </tr>
 
                     <tr style={style}>
@@ -103,19 +103,6 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>7</td>
-                        <th>The Greenberg Packers</th>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        </tr>
-
-                        <tr>
-                        <td>8</td>
                         <th>The Jimboks</th>
                         <td>0</td>
                         <td>0</td>
@@ -128,8 +115,21 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>9</td>
+                        <td>8</td>
                         <th>Alfonso Mango</th>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>8</td>
+                        <td>27</td>
+                        <td>-19</td>
+                        <td>0</td>
+                        </tr>
+
+                        <tr>
+                        <td>9</td>
+                        <th>The Greenberg Packers</th>
                         <td>1</td>
                         <td>0</td>
                         <td>0</td>
