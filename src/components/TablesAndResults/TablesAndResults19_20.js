@@ -78,14 +78,14 @@ class TablesAndResults19_20 extends Component {
                         <tr>
                         <td>5</td>
                         <th>Brumbies</th>
+                        <td>1</td>
+                        <td>1</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>27</td>
+                        <td>12</td>
+                        <td>15</td>
+                        <td>3</td>
                         </tr>
 
                         <tr>
@@ -116,19 +116,6 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>8</td>
-                        <th>Alfonso Mango</th>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>8</td>
-                        <td>27</td>
-                        <td>-19</td>
-                        <td>0</td>
-                        </tr>
-
-                        <tr>
-                        <td>9</td>
                         <th>The Greenberg Packers</th>
                         <td>1</td>
                         <td>0</td>
@@ -141,7 +128,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>10</td>
+                        <td>9</td>
                         <th>The Sea Otters</th>
                         <td>1</td>
                         <td>0</td>
@@ -150,6 +137,19 @@ class TablesAndResults19_20 extends Component {
                         <td>8</td>
                         <td>27</td>
                         <td>-19</td>
+                        <td>0</td>
+                        </tr>
+
+                        <tr>
+                        <td>10</td>
+                        <th>Alfonso Mango</th>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>20</td>
+                        <td>54</td>
+                        <td>-34</td>
                         <td>0</td>
                         </tr>
 
