@@ -103,6 +103,19 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>7</td>
+                        <th>Shorn Hub</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        </tr>
+
+                        <tr>
+                        <td>8</td>
                         <th>The Jimboks</th>
                         <td>0</td>
                         <td>0</td>
@@ -115,7 +128,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>8</td>
+                        <td>9</td>
                         <th>The Greenberg Packers</th>
                         <td>1</td>
                         <td>0</td>
@@ -128,7 +141,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>9</td>
+                        <td>10</td>
                         <th>The Sea Otters</th>
                         <td>1</td>
                         <td>0</td>
@@ -141,7 +154,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>10</td>
+                        <td>11</td>
                         <th>Alfonso Mango</th>
                         <td>2</td>
                         <td>0</td>
@@ -154,7 +167,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>11</td>
+                        <td>12</td>
                         <th>Chadrington Stanley</th>
                         <td>2</td>
                         <td>0</td>
