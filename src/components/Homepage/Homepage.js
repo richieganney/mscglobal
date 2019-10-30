@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Fixtures from './Fixtures'
 import PhotoGallery from './PhotoGallery';
 
 class Homepage extends Component {
@@ -8,6 +7,8 @@ class Homepage extends Component {
             <div>
                 <PhotoGallery/>
                 <h1 style={overlayStyle}>Here at the <span style={spanStyle}>MSC</span>, people are at the heart<br></br>of what we do</h1>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-5b626de0-491e-45be-b7d0-be39db17f8e9"></div>
             </div>
         );
     }
