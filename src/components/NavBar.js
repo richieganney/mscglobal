@@ -19,7 +19,7 @@ class NavBar extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                    <Nav.Link href="/tables">Tables & Results</Nav.Link>
+                    <Nav.Link href="/tables">Tables</Nav.Link>
                     <NavDropdown title="Season Highlights" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="/season/18-19">2018/2019</NavDropdown.Item>
                     </NavDropdown>
