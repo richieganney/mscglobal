@@ -116,20 +116,20 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>8</td>
-                        <th>Shorn Hub</th>
+                        <th>Chadrington Stanley</th>
+                        <td>3</td>
+                        <td>1</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>2</td>
+                        <td>41</td>
+                        <td>61</td>
+                        <td>-20</td>
+                        <td>3</td>
                         </tr>
 
                         <tr>
                         <td>9</td>
-                        <th>The Jimboks</th>
+                        <th>Shorn Hub</th>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -155,6 +155,19 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>11</td>
+                        <th>The Jimboks</th>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>7</td>
+                        <td>27</td>
+                        <td>-20</td>
+                        <td>0</td>
+                        </tr>
+
+                        <tr>
+                        <td>12</td>
                         <th>The Sea Otters</th>
                         <td>2</td>
                         <td>0</td>
@@ -163,19 +176,6 @@ class TablesAndResults19_20 extends Component {
                         <td>31</td>
                         <td>54</td>
                         <td>-23</td>
-                        <td>0</td>
-                        </tr>
-
-                        <tr>
-                        <td>12</td>
-                        <th>Chadrington Stanley</th>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>14</td>
-                        <td>54</td>
-                        <td>-40</td>
                         <td>0</td>
                         </tr>
 
