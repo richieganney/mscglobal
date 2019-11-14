@@ -8,10 +8,7 @@ pipeline {
                 mkdir -p build
                 echo ${BUILD_NUMBER} > release.txt
                 cp release.txt build/release.txt
-                echo "THIS IS YOUR DIRECTORY"
-                pwd
                 npm install
-                npm run build
                 cp -R build/* ../build
             '''
       }
