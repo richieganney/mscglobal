@@ -10,7 +10,6 @@ pipeline {
                 cp release.txt build/release.txt
                 echo "THIS IS YOUR DIRECTORY"
                 pwd
-                cd 01_mscglobal
                 npm install
                 npm install semantic-ui-react
                 npm install semantic-ui-css
