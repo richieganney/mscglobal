@@ -8,6 +8,8 @@ pipeline {
                 mkdir -p build
                 echo ${BUILD_NUMBER} > release.txt
                 cp release.txt build/release.txt
+                echo "THIS IS YOUR DIRECTORY"
+                pwd
                 cd mscglobal
                 npm install
                 npm install semantic-ui-react
