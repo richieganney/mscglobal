@@ -11,8 +11,6 @@ pipeline {
                 echo "THIS IS YOUR DIRECTORY"
                 pwd
                 npm install
-                npm install semantic-ui-react
-                npm install semantic-ui-css
                 npm run build
                 cp -R build/* ../build
             '''
