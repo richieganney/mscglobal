@@ -8,6 +8,7 @@ pipeline {
                 mkdir -p build
                 echo ${BUILD_NUMBER} > release.txt
                 cp release.txt build/release.txt
+                npm run build
                 npm install
                 cp -R build/* ../build
             '''
