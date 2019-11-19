@@ -15,9 +15,8 @@ pipeline {
       steps {
         script {
           sh """
-          heroku whoami
-          heroku git:remote -a mscglobal
-          git push heroku master
+          git config user.name
+          git status
           """
         }
       }
