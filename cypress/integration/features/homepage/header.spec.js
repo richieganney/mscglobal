@@ -6,8 +6,8 @@ describe("Cypress", () => {
   
   describe("hompage", () => {
     it("shows website header", () => {
-      cy.visit("localhost:3000");
-      cy.contains("MSC South West Division 3"
+      cy.visit("http://10.0.4.190:3000/");
+      cy.get("#mscHeader").contains("Here at the"
       );
     });
   });

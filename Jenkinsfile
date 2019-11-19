@@ -11,11 +11,25 @@ pipeline {
             '''
       }
     }
+      stage('running end-to-end tests in cypress'){
+        steps {
+          script {
+            sh """
+            npm start
+            npx cypress run --spec cypress/integration/features/homepage/*_spec.js
+            npx cypress run --spec cypress/integration/features/tables/*_spec.js
+            npx cypress run --spec cypress/integration/features/season_highlights/*_spec.js
+            npx cypress run --spec cypress/integration/features/all_teams/*_spec.js
+            npx cypress run --spec cypress/integration/features/about/*_spec.js
+            """
+        }
+      }
+    }
     stage('deploying to heroku'){
       steps {
         script {
           sh """
-          git status
+          heroku whoami
           git push heroku HEAD:master
           """
         }
