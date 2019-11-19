@@ -7,6 +7,7 @@ pipeline {
             sh '''
                 echo ${BUILD_NUMBER} > release.txt
                 npm install
+                npm audit fix
             '''
       }
     }
@@ -15,8 +16,7 @@ pipeline {
         script {
           sh """
           heroku whoami
-          // heroku git:remote -a mscglobal
-          // git push heroku master
+          heroku git:remote -a mscglobal
           """
         }
       }
