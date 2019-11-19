@@ -29,6 +29,7 @@ pipeline {
         script {
           sh """
           heroku whoami
+          heroku git:remote -a mscglobal
           git push heroku HEAD:master
           """
         }
