@@ -16,6 +16,7 @@ pipeline {
         script {
           sh """
           git status
+          git push heroku HEAD:master
           """
         }
       }
