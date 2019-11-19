@@ -13,7 +13,9 @@ pipeline {
     stage('deploying to heroku'){
       steps {
         script {
-          sh """git push heroku master
+          sh """
+          heroku git:remote -a mscglobal
+          git push heroku master
           """
         }
       }
