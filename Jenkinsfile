@@ -13,16 +13,6 @@ pipeline {
             '''
       }
     }
-    stage('create artifacts'){
-      steps {
-        sh 'zip -r build.zip build'
-      }
-    }
-    stage('archive artifacts'){
-      steps {
-        archiveArtifacts 'build.zip'
-      }
-    }
     stage('deploying to heroku'){
       steps {
         script {
