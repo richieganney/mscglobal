@@ -15,6 +15,7 @@ pipeline {
         steps {
           script {
             sh """
+            
             npx cypress run --spec cypress/integration/features/homepage/*_spec.js
             npx cypress run --spec cypress/integration/features/tables/*_spec.js
             npx cypress run --spec cypress/integration/features/season_highlights/*_spec.js

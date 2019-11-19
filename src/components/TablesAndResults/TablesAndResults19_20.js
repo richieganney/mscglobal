@@ -25,6 +25,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>1</td>
+                        <th>The Greenberg Packers</th>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>89</td>
+                        <td>74</td>
+                        <td>15</td>
+                        <td>9</td>
+                        </tr>
+
+                    <tr style={style}>
+                        <td>2</td>
                         <th>AFC Bournemurf</th>
                         <td>2</td>
                         <td>2</td>
@@ -37,7 +50,7 @@ class TablesAndResults19_20 extends Component {
                     </tr>
 
                     <tr style={style}>
-                        <td>2</td>
+                        <td>3</td>
                         <th>Richie's Rovers</th>
                         <td>3</td>
                         <td>2</td>
@@ -48,19 +61,6 @@ class TablesAndResults19_20 extends Component {
                         <td>22</td>
                         <td>6</td>
                     </tr>
-
-                    <tr style={style}>
-                        <td>3</td>
-                        <th>The Greenberg Packers</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>62</td>
-                        <td>59</td>
-                        <td>3</td>
-                        <td>6</td>
-                        </tr>
 
                     <tr style={style}>
                         <td>4</td>
@@ -155,19 +155,6 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>11</td>
-                        <th>The Jimboks</th>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>7</td>
-                        <td>27</td>
-                        <td>-20</td>
-                        <td>0</td>
-                        </tr>
-
-                        <tr>
-                        <td>12</td>
                         <th>The Sea Otters</th>
                         <td>2</td>
                         <td>0</td>
@@ -176,6 +163,19 @@ class TablesAndResults19_20 extends Component {
                         <td>31</td>
                         <td>54</td>
                         <td>-23</td>
+                        <td>0</td>
+                        </tr>
+
+                        <tr>
+                        <td>12</td>
+                        <th>The Jimboks</th>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>22</td>
+                        <td>54</td>
+                        <td>-32</td>
                         <td>0</td>
                         </tr>
 
