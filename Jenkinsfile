@@ -15,7 +15,6 @@ pipeline {
       steps {
         script {
           sh """
-          git config user.name
           git status
           """
         }
