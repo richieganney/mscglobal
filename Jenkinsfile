@@ -25,6 +25,7 @@ pipeline {
             npx cypress run --spec cypress/integration/features/season_highlights/*.spec.js
             npx cypress run --spec cypress/integration/features/all_teams/*.spec.js
             npx cypress run --spec cypress/integration/features/about/*.spec.js
+            exit
             """
         }
       }
@@ -33,6 +34,7 @@ pipeline {
       steps {
         script {
           sh """
+          cd /var/lib/jenkins/workspace/mscglobal_1
           heroku whoami
           heroku git:remote -a mscglobal
           git push heroku HEAD:master
