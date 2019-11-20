@@ -64,6 +64,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>4</td>
+                        <th>Chadrington Stanley</th>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>68</td>
+                        <td>71</td>
+                        <td>-3</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
                         <th>Esampdoria</th>
                         <td>1</td>
                         <td>1</td>
@@ -76,7 +89,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>5</td>
+                        <td>6</td>
                         <th>Fortuna Müzzeldorf</th>
                         <td>1</td>
                         <td>1</td>
@@ -89,7 +102,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>6</td>
+                        <td>7</td>
                         <th>Diamondo</th>
                         <td>1</td>
                         <td>1</td>
@@ -102,7 +115,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>7</td>
+                        <td>8</td>
                         <th>Brumbies</th>
                         <td>1</td>
                         <td>1</td>
@@ -115,28 +128,15 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>8</td>
-                        <th>Chadrington Stanley</th>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>41</td>
-                        <td>61</td>
-                        <td>-20</td>
-                        <td>3</td>
-                        </tr>
-
-                        <tr>
                         <td>9</td>
                         <th>Shorn Hub</th>
+                        <td>1</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>27</td>
+                        <td>-17</td>
                         <td>0</td>
                         </tr>
 
