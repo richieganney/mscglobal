@@ -19,7 +19,6 @@ pipeline {
             sh """
             cd /home/admin/.ssh
             ssh -i "richie-oregon.pem" admin@54.245.145.29
-            yes
             cd mongolian-squash-championship/
             npx cypress run --spec cypress/integration/features/homepage/*.spec.js
             npx cypress run --spec cypress/integration/features/tables/*.spec.js
