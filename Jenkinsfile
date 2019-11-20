@@ -6,6 +6,7 @@ pipeline {
       steps {
             sh '''
                 echo ${BUILD_NUMBER} > release.txt
+                pwd
                 npm install
                 npm audit fix
             '''
@@ -15,12 +16,15 @@ pipeline {
         steps {
           script {
             sh """
-            
-            npx cypress run --spec cypress/integration/features/homepage/*_spec.js
-            npx cypress run --spec cypress/integration/features/tables/*_spec.js
-            npx cypress run --spec cypress/integration/features/season_highlights/*_spec.js
-            npx cypress run --spec cypress/integration/features/all_teams/*_spec.js
-            npx cypress run --spec cypress/integration/features/about/*_spec.js
+            cd /home/admin/.ssh
+            ssh -i "richie-oregon.pem" admin@54.245.145.29
+            yes
+            cd mongolian-squash-championship/
+            npx cypress run --spec cypress/integration/features/homepage/*.spec.js
+            npx cypress run --spec cypress/integration/features/tables/*.spec.js
+            npx cypress run --spec cypress/integration/features/season_highlights/*.spec.js
+            npx cypress run --spec cypress/integration/features/all_teams/*.spec.js
+            npx cypress run --spec cypress/integration/features/about/*.spec.js
             """
         }
       }
