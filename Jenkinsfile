@@ -7,6 +7,7 @@ pipeline {
             sh '''
                 echo ${BUILD_NUMBER} > release.txt
                 pwd
+                sleep 15s
                 npm install
                 npm audit fix
             '''
