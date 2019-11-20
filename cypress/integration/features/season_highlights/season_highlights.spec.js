@@ -6,3 +6,4 @@ describe("season highlights", () => {
       cy.contains("Some of the magic from the 2018/2019 season")
     });
   });
+  

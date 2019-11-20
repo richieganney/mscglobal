@@ -12,22 +12,6 @@ pipeline {
             '''
       }
     }
-      stage('running end-to-end tests in cypress'){
-        steps {
-          script {
-            sh """
-            nohup npm start &
-            sleep 10s
-            npx cypress run --spec cypress/integration/features/homepage/*.spec.js
-            npx cypress run --spec cypress/integration/features/tables/*.spec.js
-            npx cypress run --spec cypress/integration/features/season_highlights/*.spec.js
-            npx cypress run --spec cypress/integration/features/all_teams/*.spec.js
-            npx cypress run --spec cypress/integration/features/about/*.spec.js
-            // kill server
-            """
-        }
-      }
-    }
     stage('deploying to heroku'){
       steps {
         script {
