@@ -7,7 +7,6 @@ pipeline {
             sh '''
                 echo ${BUILD_NUMBER} > release.txt
                 pwd
-                sleep 15s
                 npm install
                 npm audit fix
             '''
@@ -17,15 +16,13 @@ pipeline {
         steps {
           script {
             sh """
-            cd /home/admin/.ssh
-            ssh -i "richie-oregon.pem" admin@54.245.145.29
-            cd mongolian-squash-championship/
+            nohup npm start &
             npx cypress run --spec cypress/integration/features/homepage/*.spec.js
             npx cypress run --spec cypress/integration/features/tables/*.spec.js
             npx cypress run --spec cypress/integration/features/season_highlights/*.spec.js
             npx cypress run --spec cypress/integration/features/all_teams/*.spec.js
             npx cypress run --spec cypress/integration/features/about/*.spec.js
-            exit
+            // kill server
             """
         }
       }
