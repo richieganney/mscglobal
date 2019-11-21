@@ -19,7 +19,6 @@ pipeline {
           myTestContainer.pull()
           myTestContainer.inside {
               sh '''
-              chown -R 996:994 "/.npm"
               npm install
               npx cypress run
               '''
