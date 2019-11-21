@@ -23,7 +23,7 @@ pipeline {
           myTestContainer.inside {
               sh '''
               npm install
-              npm audit fix
+              npm install --save-dev cypress
               npx cypress run
               '''
           }
