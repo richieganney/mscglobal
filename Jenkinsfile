@@ -19,7 +19,7 @@ pipeline {
           myTestContainer.pull()
           myTestContainer.inside {
               sh '''
-              sudo npm install
+              npm install
               npx cypress run
               '''
           }
@@ -30,7 +30,6 @@ pipeline {
       steps {
         script {
           sh """
-          heroku whoami
           heroku git:remote -a mscglobal
           git push heroku HEAD:master
           """
