@@ -2,16 +2,16 @@ pipeline {
   agent any
   tools {nodejs "nodejs"}
   stages {
-    stage('build') {
-      steps {
-            sh '''
-                echo ${BUILD_NUMBER} > release.txt
-                pwd
-                npm install
-                npm audit fix
-            '''
-      }
-    }
+    // stage('build') {
+    //   steps {
+    //         sh '''
+    //             echo ${BUILD_NUMBER} > release.txt
+    //             pwd
+    //             npm install
+    //             npm audit fix
+    //         '''
+    //   }
+    // }
     stage('containerise with docker and run cypress tests') {
       steps {
         script {
