@@ -19,8 +19,7 @@ pipeline {
           myTestContainer.pull()
           myTestContainer.inside {
               sh '''
-              npm install
-              npx cypress run
+              pwd
               '''
           }
         }
