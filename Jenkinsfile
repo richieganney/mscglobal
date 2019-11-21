@@ -1,6 +1,9 @@
 pipeline {
   agent any
   tools {nodejs "nodejs"}
+  environment {
+    HOME = '.'
+  }
   stages {
     // stage('build') {
     //   steps {
