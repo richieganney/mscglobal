@@ -25,4 +25,6 @@ pipeline {
     }
   }
 }
+
+// /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock $OPTIONS $DOCKER_STORAGE_OPTIONS $DOCKER_ADD_RUNTIMES
   
