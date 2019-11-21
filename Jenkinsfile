@@ -14,7 +14,7 @@ pipeline {
     }
     stage('containerise with docker and run cypress tests') {
       steps {
-      dockerNode('docker-label') {
+      dockerNode(dockerHost: 'tcp://127.0.0.1:4243', image: '') {
           script {
             sh '''
             npx cypress run
