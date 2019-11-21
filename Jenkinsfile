@@ -18,7 +18,10 @@ pipeline {
         def myTestContainer = docker.image('node:13')
           myTestContainer.pull()
           myTestContainer.inside {
-              sh 'npx cypress run'
+              sh '''
+              npm install
+              npx cypress run
+              '''
           }
         }
       }
