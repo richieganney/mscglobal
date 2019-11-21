@@ -13,13 +13,13 @@ pipeline {
       }
     }
     stage('containerise with docker and run cypress tests') {
+      steps {
       dockerNode('docker-label') {
-        steps {
           script {
             sh '''
             npx cypress run
             '''
-          }
+          } 
         }
       }
     }
