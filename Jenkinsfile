@@ -12,6 +12,17 @@ pipeline {
             '''
       }
     }
+    stage('containerise with docker and run cypress tests') {
+      dockerNode('docker-label') {
+        steps {
+          script {
+            sh '''
+            npx cypress run
+            '''
+          }
+        }
+      }
+    }
     stage('deploying to heroku'){
       steps {
         script {
