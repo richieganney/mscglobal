@@ -15,7 +15,8 @@ pipeline {
               sh '''
               whoami
               npm install
-              echo "y" | apt-get update
+              apt-get install -y sudo
+              sudo apt-get update
               apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
               npx cypress run
               '''
