@@ -16,7 +16,7 @@ pipeline {
     //         '''
     //   }
     // }
-    stage('containerise with docker and run cypress tests') {
+    stage('build and test') {
       steps {
         script {
         def myTestContainer = docker.image('node:13')
@@ -24,13 +24,14 @@ pipeline {
           myTestContainer.inside {
               sh '''
               npm install
+              apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
               npx cypress run
               '''
           }
         }
       }
     }
-    stage('deploying to heroku'){
+    stage('deploy'){
       steps {
         script {
           sh """
