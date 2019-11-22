@@ -23,9 +23,10 @@ pipeline {
           myTestContainer.pull()
           myTestContainer.inside {
               sh '''
-              docker exec -u root -t -i container_id /bin/bash
-              npm install
               apt-get update
+              apt-get -y install sudo
+              useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
+              npm install
               sudo apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
               npx cypress run
               '''
