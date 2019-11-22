@@ -15,9 +15,10 @@ pipeline {
               sh '''
               whoami
               npm install
+              nohup npm start &
+              sleep 15s
               apt-get update --assume-yes
               apt-get --assume-yes install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
-              nohup npm start &
               npx cypress run
               killall node -9
               '''
