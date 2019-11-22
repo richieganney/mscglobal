@@ -11,7 +11,7 @@ pipeline {
         script {
         def myTestContainer = docker.image('node:13')
           myTestContainer.pull()
-          myTestContainer.inside {
+          myTestContainer.inside("-itu root") {
               sh '''
               whoami
               npm install
