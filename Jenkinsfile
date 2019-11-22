@@ -1,5 +1,9 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      args '-u root:sudo -v $HOME/workspace/myproject:/myproject'
+    }
+  }
   tools {nodejs "nodejs"}
   environment {
     // HOME = '.'
@@ -17,11 +21,6 @@ pipeline {
     //   }
     // }
     stage('build and test') {
-      agent {
-        docker {
-            args '-u root:sudo -v $HOME/workspace/myproject:/myproject'
-        }
-      }
       steps {
         script {
         def myTestContainer = docker.image('node:13')
