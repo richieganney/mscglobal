@@ -13,6 +13,7 @@ pipeline {
           myTestContainer.pull()
           myTestContainer.inside {
               sh '''
+              whoami
               npm install
               apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
               npx cypress run
