@@ -15,6 +15,7 @@ pipeline {
               sh '''
               whoami
               npm install
+              apt-get update
               apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
               npx cypress run
               '''
@@ -26,6 +27,7 @@ pipeline {
       steps {
         script {
           sh """
+          heroku whoami
           heroku git:remote -a mscglobal
           git push heroku HEAD:master
           """
