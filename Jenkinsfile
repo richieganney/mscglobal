@@ -21,7 +21,9 @@ pipeline {
               '''
           }
         }
-        sh 'npx cypress run'
+        myTestContainer.inside("-itu root") {
+          sh 'npx cypress run'
+        }
       }
     }
     stage('deploy'){
