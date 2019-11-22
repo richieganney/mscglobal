@@ -14,14 +14,12 @@ pipeline {
           myTestContainer.inside("-itu root") {
               sh '''
               whoami
-              npm install
               apt-get update --assume-yes
               apt-get --assume-yes install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
-              nohup npm start &           
+              npm install
+              nohup npm start &  
+              npx cypress run       
               '''
-          }
-          myTestContainer.inside("-itu root") {
-            sh 'npx cypress run'
           }
         }
       }
