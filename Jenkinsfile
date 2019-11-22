@@ -19,7 +19,7 @@ pipeline {
     stage("Fix the permission issue") {
       agent any
         steps {
-          sh "sudo -S chown root:jenkins /run/docker.sock"
+          sh "echo '' | sudo -S chown root:jenkins /run/docker.sock"
         }
     }
     stage('build and test') {
