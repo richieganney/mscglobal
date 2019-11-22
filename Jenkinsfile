@@ -2,7 +2,8 @@ pipeline {
   agent any
   tools {nodejs "nodejs"}
   environment {
-    HOME = '.'
+    // HOME = '.'
+    HOME="${env.WORKSPACE}"
   }
   stages {
     // stage('build') {
@@ -23,7 +24,6 @@ pipeline {
           myTestContainer.inside {
               sh '''
               npm install
-              npm install --save-dev cypress
               npx cypress run
               '''
           }
