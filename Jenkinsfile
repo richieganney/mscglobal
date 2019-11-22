@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      args '-u root:sudo -v $HOME/workspace/myproject:/myproject'
-    }
-  }
+  agent any
   tools {nodejs "nodejs"}
   environment {
     // HOME = '.'
@@ -20,6 +16,12 @@ pipeline {
     //         '''
     //   }
     // }
+    stage("Fix the permission issue") {
+      agent any
+        steps {
+          sh "sudo chown root:jenkins /run/docker.sock"
+        }
+    }
     stage('build and test') {
       steps {
         script {
