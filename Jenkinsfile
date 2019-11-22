@@ -23,7 +23,6 @@ pipeline {
           myTestContainer.pull()
           myTestContainer.inside {
               sh '''
-              apt-get update
               apt-get -y install sudo
               useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
               npm install
