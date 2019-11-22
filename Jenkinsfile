@@ -14,10 +14,8 @@ pipeline {
           myTestContainer.inside("-itu root") {
               sh '''
               whoami
-              apt-get install -y sudo
-              sudo npm install
-              sudo apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
-              sudo npx cypress run
+              npm install
+              npx cypress run
               '''
           }
         }
@@ -48,3 +46,4 @@ pipeline {
 // }
 // /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock $OPTIONS $DOCKER_STORAGE_OPTIONS $DOCKER_ADD_RUNTIMES
   
+// apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
