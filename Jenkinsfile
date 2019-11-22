@@ -16,7 +16,7 @@ pipeline {
               whoami
               npm install
               apt-get update --assume-yes
-              apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
+              apt-get --assume-yes install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
               npx cypress run
               '''
           }
