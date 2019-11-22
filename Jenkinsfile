@@ -20,9 +20,9 @@ pipeline {
               nohup npm start &           
               '''
           }
-        }
-        myTestContainer.inside("-itu root") {
-          sh 'npx cypress run'
+          myTestContainer.inside("-itu root") {
+            sh 'npx cypress run'
+          }
         }
       }
     }
