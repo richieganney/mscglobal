@@ -13,9 +13,9 @@ pipeline {
           myTestContainer.pull()
           myTestContainer.inside {
               sh '''
-              useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
+              su -
               npm install
-              sudo apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
+              apt-get install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
               npx cypress run
               '''
           }
