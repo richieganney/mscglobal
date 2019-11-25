@@ -24,7 +24,7 @@ pipeline {
         }
       }
     }
-    stage('deploy'){
+    stage {
       steps {
         script {
           sh """
@@ -37,14 +37,3 @@ pipeline {
     }
   }
 }
-
-// stage('build') {
-//   steps {
-//         sh '''
-//             echo ${BUILD_NUMBER} > release.txt
-//             pwd
-//             npm install
-//             npm audit fix
-//         '''
-//   }
-// }
