@@ -24,14 +24,14 @@ pipeline {
         }
       }
     }
-    stage {
+    stage('deploy') {
       steps {
         script {
-          sh """
+          sh '''
           heroku whoami
           heroku git:remote -a mscglobal
           git push heroku HEAD:master
-          """
+          '''
         }
       }
     }
