@@ -25,6 +25,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>1</td>
+                        <th>AFC Bournemurf</th>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>92</td>
+                        <td>41</td>
+                        <td>51</td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr style={style}>
+                        <td>2</td>
                         <th>The Greenberg Packers</th>
                         <td>4</td>
                         <td>3</td>
@@ -35,19 +48,6 @@ class TablesAndResults19_20 extends Component {
                         <td>15</td>
                         <td>9</td>
                         </tr>
-
-                    <tr style={style}>
-                        <td>2</td>
-                        <th>AFC Bournemurf</th>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>61</td>
-                        <td>23</td>
-                        <td>38</td>
-                        <td>6</td>
-                    </tr>
 
                     <tr style={style}>
                         <td>3</td>
@@ -90,19 +90,6 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>6</td>
-                        <th>Fortuna Müzzeldorf</th>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>27</td>
-                        <td>9</td>
-                        <td>18</td>
-                        <td>3</td>
-                        </tr>
-
-                        <tr>
-                        <td>7</td>
                         <th>Diamondo</th>
                         <td>1</td>
                         <td>1</td>
@@ -115,7 +102,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>8</td>
+                        <td>7</td>
                         <th>Brumbies</th>
                         <td>1</td>
                         <td>1</td>
@@ -124,6 +111,19 @@ class TablesAndResults19_20 extends Component {
                         <td>27</td>
                         <td>12</td>
                         <td>15</td>
+                        <td>3</td>
+                        </tr>
+
+                        <tr>
+                        <td>8</td>
+                        <th>Fortuna Müzzeldorf</th>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>45</td>
+                        <td>40</td>
+                        <td>5</td>
                         <td>3</td>
                         </tr>
 
