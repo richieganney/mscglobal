@@ -129,6 +129,19 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>9</td>
+                        <th>Cowracens</th>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>36</td>
+                        <td>38</td>
+                        <td>-2</td>
+                        <td>3</td>
+                        </tr>
+
+                        <tr>
+                        <td>10</td>
                         <th>Shorn Hub</th>
                         <td>1</td>
                         <td>0</td>
@@ -137,19 +150,6 @@ class TablesAndResults19_20 extends Component {
                         <td>10</td>
                         <td>27</td>
                         <td>-17</td>
-                        <td>0</td>
-                        </tr>
-
-                        <tr>
-                        <td>10</td>
-                        <th>Cowracens</th>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>9</td>
-                        <td>27</td>
-                        <td>-18</td>
                         <td>0</td>
                         </tr>
 
@@ -169,13 +169,13 @@ class TablesAndResults19_20 extends Component {
                         <tr>
                         <td>12</td>
                         <th>The Jimboks</th>
-                        <td>2</td>
+                        <td>3</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>2</td>
-                        <td>22</td>
-                        <td>54</td>
-                        <td>-32</td>
+                        <td>3</td>
+                        <td>33</td>
+                        <td>81</td>
+                        <td>-48</td>
                         <td>0</td>
                         </tr>
 
