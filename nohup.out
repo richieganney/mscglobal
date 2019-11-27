@@ -223,3 +223,28 @@ Compiled with warnings.
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
+
+> my-app@0.1.0 start /Users/Richie.Ganney@ecs-digital.co.uk/Projects/mscglobal
+> react-scripts start
+
+Starting the development server...
+
+Compiled with warnings.
+
+./src/components/SeasonHighlights/Season18_19.js
+  Line 31:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 40:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 58:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 67:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 76:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 85:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 94:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+./src/components/TablesAndResults/AllTables.js
+  Line 9:   Imported JSX component TablesAndResults19_20 must be in PascalCase  react/jsx-pascal-case
+  Line 10:  Imported JSX component TablesAndResults18_19 must be in PascalCase  react/jsx-pascal-case
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
