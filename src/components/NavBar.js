@@ -29,6 +29,9 @@ class NavBar extends Component {
                     <div id="about"><Nav.Link eventKey={2} href="/about">
                     About
                     </Nav.Link></div>
+                    <div id="apiTestTable"><Nav.Link eventKey={2} href="/api-test-table">
+                    API Table Test
+                    </Nav.Link></div>
                     </Nav>
                     </Navbar.Collapse>
                 </Navbar>

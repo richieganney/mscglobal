@@ -248,3 +248,8 @@ Compiled with warnings.
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
+
+> my-app@0.1.0 start /Users/Richie.Ganney@ecs-digital.co.uk/Projects/mscglobal
+> react-scripts start
+
+Something is already running on port 3000.
