@@ -90,19 +90,6 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>6</td>
-                        <th>Diamondo</th>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>27</td>
-                        <td>10</td>
-                        <td>17</td>
-                        <td>3</td>
-                        </tr>
-
-                        <tr>
-                        <td>7</td>
                         <th>Brumbies</th>
                         <td>1</td>
                         <td>1</td>
@@ -115,7 +102,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>8</td>
+                        <td>7</td>
                         <th>Fortuna Müzzeldorf</th>
                         <td>2</td>
                         <td>1</td>
@@ -128,7 +115,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>9</td>
+                        <td>8</td>
                         <th>Cowracens</th>
                         <td>2</td>
                         <td>1</td>
@@ -141,7 +128,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>10</td>
+                        <td>9</td>
                         <th>The Sea Otters</th>
                         <td>2</td>
                         <td>0</td>
@@ -154,7 +141,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>11</td>
+                        <td>10</td>
                         <th>Alfonso Mango</th>
                         <td>2</td>
                         <td>0</td>
@@ -167,7 +154,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>12</td>
+                        <td>11</td>
                         <th>Shorn Hub</th>
                         <td>2</td>
                         <td>0</td>
@@ -180,7 +167,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>13</td>
+                        <td>12</td>
                         <th>The Jimboks</th>
                         <td>3</td>
                         <td>0</td>
