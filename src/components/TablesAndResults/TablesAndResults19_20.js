@@ -64,6 +64,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>4</td>
+                        <th>Fortuna Müzzeldorf</th>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>78</td>
+                        <td>64</td>
+                        <td>14</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
                         <th>Chadrington Stanley</th>
                         <td>4</td>
                         <td>2</td>
@@ -76,7 +89,7 @@ class TablesAndResults19_20 extends Component {
                     </tr>
 
                     <tr>
-                        <td>5</td>
+                        <td>6</td>
                         <th>Esampdoria</th>
                         <td>1</td>
                         <td>1</td>
@@ -89,28 +102,15 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>6</td>
-                        <th>Brumbies</th>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>27</td>
-                        <td>12</td>
-                        <td>15</td>
-                        <td>3</td>
-                        </tr>
-
-                        <tr>
                         <td>7</td>
-                        <th>Fortuna Müzzeldorf</th>
+                        <th>Brumbies</th>
                         <td>2</td>
                         <td>1</td>
                         <td>0</td>
                         <td>1</td>
+                        <td>51</td>
                         <td>45</td>
-                        <td>40</td>
-                        <td>5</td>
+                        <td>6</td>
                         <td>3</td>
                         </tr>
 
