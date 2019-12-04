@@ -7,7 +7,7 @@ import Homepage from './components/Homepage/Homepage';
 import './styles.css'
 import AllTables from './components/TablesAndResults/AllTables';
 import AllTeams from './components/AllTeams';
-import API_test from './components/API_test';
+import API from './components/API_table/API';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/tables" component={AllTables} />
         <Route path="/season/18-19" component={Season18_19} />
         <Route path="/all-teams" component={AllTeams} />
-        <Route path="/api-test-table" component={API_test} />
+        <Route path="/api-test-table" component={API} />
       </header>
     </div>
     </Router>
