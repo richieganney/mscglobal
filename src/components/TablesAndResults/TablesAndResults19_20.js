@@ -25,6 +25,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>1</td>
+                        <th>Richie's Rovers</th>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>123</td>
+                        <td>49</td>
+                        <td>74</td>
+                        <td>12</td>
+                    </tr>
+
+                    <tr style={style}>
+                        <td>2</td>
                         <th>AFC Bournemurf</th>
                         <td>3</td>
                         <td>3</td>
@@ -33,19 +46,6 @@ class TablesAndResults19_20 extends Component {
                         <td>92</td>
                         <td>41</td>
                         <td>51</td>
-                        <td>9</td>
-                    </tr>
-
-                    <tr style={style}>
-                        <td>2</td>
-                        <th>Richie's Rovers</th>
-                        <td>4</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>96</td>
-                        <td>47</td>
-                        <td>49</td>
                         <td>9</td>
                     </tr>
 
@@ -142,19 +142,6 @@ class TablesAndResults19_20 extends Component {
 
                         <tr>
                         <td>10</td>
-                        <th>Alfonso Mango</th>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>20</td>
-                        <td>54</td>
-                        <td>-34</td>
-                        <td>0</td>
-                        </tr>
-
-                        <tr>
-                        <td>11</td>
                         <th>Shorn Hub</th>
                         <td>2</td>
                         <td>0</td>
@@ -167,7 +154,7 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                         <tr>
-                        <td>12</td>
+                        <td>11</td>
                         <th>The Jimboks</th>
                         <td>3</td>
                         <td>0</td>
@@ -176,6 +163,19 @@ class TablesAndResults19_20 extends Component {
                         <td>33</td>
                         <td>81</td>
                         <td>-48</td>
+                        <td>0</td>
+                        </tr>
+
+                        <tr>
+                        <td>12</td>
+                        <th>Alfonso Mango</th>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>22</td>
+                        <td>81</td>
+                        <td>-59</td>
                         <td>0</td>
                         </tr>
 
