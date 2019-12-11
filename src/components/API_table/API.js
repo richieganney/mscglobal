@@ -30,8 +30,6 @@ class API extends Component {
     getTable(e) {
         e.preventDefault();
         const url = process.env.REACT_APP_LEAGUE_TABLE_API;
-        console.log("URL HERE")
-        console.log(url)
         axios
         .get(url)
         .then(response => {
