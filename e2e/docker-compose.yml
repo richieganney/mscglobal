@@ -5,7 +5,7 @@ services:
     environment:
       - PORT=3000
   cypress:
-    image: "cypress/included:3.3.2"
+    image: "cypress/included:3.2.0"
     depends_on:
       - mscglobal
     environment:
