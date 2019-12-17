@@ -6,7 +6,7 @@ describe("Cypress", () => {
   
   describe("hompage", () => {
     it("shows website header", () => {
-      cy.visit("http://127.0.0.1:3000/");
+      cy.visit("/");
       cy.get("#mscHeader").contains("Here at the"
       );
     });
