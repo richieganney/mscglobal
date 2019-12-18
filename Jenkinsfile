@@ -10,6 +10,7 @@ pipeline {
       steps {
         script {
               sh '''
+              whoami
               npm install    
               '''
         }
