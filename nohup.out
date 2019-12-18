@@ -323,3 +323,42 @@ Compiled with warnings.
 Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
+
+> my-app@8.0.0 start /Users/Richie.Ganney@ecs-digital.co.uk/Projects/mscglobal
+> react-scripts start
+
+[34mℹ[39m [90m｢wds｣[39m: Project is running at http://10.43.43.203/
+[34mℹ[39m [90m｢wds｣[39m: webpack output is served from /
+[34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /Users/Richie.Ganney@ecs-digital.co.uk/Projects/mscglobal/public
+[34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /index.html
+Starting the development server...
+
+Compiled with warnings.
+
+./src/components/SeasonHighlights/Season18_19.js
+  Line 31:25:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 40:25:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 49:25:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 58:25:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 67:25:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 76:25:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 85:25:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 94:25:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+./src/components/API_table/API.js
+  Line 47:13:  Imported JSX component API_test must be in PascalCase or SCREAMING_SNAKE_CASE  react/jsx-pascal-case
+
+./src/components/API_table/API_test.js
+  Line 6:5:   Useless constructor                                                                  no-useless-constructor
+  Line 12:7:  Imported JSX component API_test_table must be in PascalCase or SCREAMING_SNAKE_CASE  react/jsx-pascal-case
+
+./src/components/API_table/API_test_table.js
+  Line 6:5:  Useless constructor  no-useless-constructor
+
+./src/components/TablesAndResults/AllTables.js
+  Line 9:13:   Imported JSX component TablesAndResults19_20 must be in PascalCase or SCREAMING_SNAKE_CASE  react/jsx-pascal-case
+  Line 10:13:  Imported JSX component TablesAndResults18_19 must be in PascalCase or SCREAMING_SNAKE_CASE  react/jsx-pascal-case
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+

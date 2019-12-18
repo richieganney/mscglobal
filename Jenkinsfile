@@ -6,24 +6,24 @@ pipeline {
     HOME="${env.WORKSPACE}"
   }
   stages {
-    stage('build and test') {
+    stage('build') {
       steps {
         script {
-        def myTestContainer = docker.image('node:13')
-          myTestContainer.pull()
-          myTestContainer.inside("-itu root") {
               sh '''
-              whoami
-              apt-get update --assume-yes
-              apt-get --assume-yes install xvfb libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
-              npm install
-              nohup npm start &  
-              npx cypress run       
+              npm install    
               '''
-          }
         }
       }
     }
+    // stage('test') {
+    //   steps {
+    //     script {
+    //           sh '''
+    //           docker run -it -v $PWD:/e2e -w /e2e cypress/included:3.3.2      
+    //           '''
+    //     }
+    //   }
+    // }
     stage('deploy') {
       steps {
         script {
