@@ -11,6 +11,7 @@ pipeline {
     //     script {
     //           sh '''
     //           whoami
+    //           pwd
     //           npm install    
     //           '''
     //     }
@@ -29,6 +30,7 @@ pipeline {
       steps {
         script {
           sh '''
+          pwd
           terraform init
           terraform apply --assume-yes
           '''
