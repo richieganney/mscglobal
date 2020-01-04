@@ -6,16 +6,16 @@ pipeline {
     HOME="${env.WORKSPACE}"
   }
   stages {
-    stage('build') {
-      steps {
-        script {
-              sh '''
-              whoami
-              npm install    
-              '''
-        }
-      }
-    }
+    // stage('build') {
+    //   steps {
+    //     script {
+    //           sh '''
+    //           whoami
+    //           npm install    
+    //           '''
+    //     }
+    //   }
+    // }
     // stage('test') {
     //   steps {
     //     script {
@@ -29,9 +29,8 @@ pipeline {
       steps {
         script {
           sh '''
-          heroku whoami
-          heroku git:remote -a mscglobal
-          git push heroku HEAD:master
+          terraform init
+          terraform apply --assume-yes
           '''
         }
       }
