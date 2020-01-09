@@ -31,8 +31,9 @@ pipeline {
         script {
           sh '''
           pwd
-          terraform init
-          terraform apply --assume-yes
+          sudo terraform init
+          sudo terraform plan
+          sudo terraform apply
           '''
         }
       }

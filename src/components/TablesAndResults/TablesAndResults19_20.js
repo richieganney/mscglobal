@@ -51,6 +51,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>3</td>
+                        <th>Fortuna Müzzeldorf</th>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>105</td>
+                        <td>68</td>
+                        <td>37</td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr style={style}>
+                        <td>4</td>
                         <th>The Greenberg Packers</th>
                         <td>4</td>
                         <td>3</td>
@@ -61,19 +74,6 @@ class TablesAndResults19_20 extends Component {
                         <td>15</td>
                         <td>9</td>
                         </tr>
-
-                    <tr style={style}>
-                        <td>4</td>
-                        <th>Fortuna Müzzeldorf</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>78</td>
-                        <td>64</td>
-                        <td>14</td>
-                        <td>6</td>
-                    </tr>
 
                     <tr>
                         <td>5</td>
@@ -169,13 +169,13 @@ class TablesAndResults19_20 extends Component {
                         <tr>
                         <td>12</td>
                         <th>Alfonso Mango</th>
-                        <td>3</td>
+                        <td>4</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>3</td>
-                        <td>22</td>
-                        <td>81</td>
-                        <td>-59</td>
+                        <td>4</td>
+                        <td>26</td>
+                        <td>108</td>
+                        <td>-82</td>
                         <td>0</td>
                         </tr>
 

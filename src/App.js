@@ -20,7 +20,6 @@ function App() {
         <Route path="/tables" component={AllTables} />
         <Route path="/season/18-19" component={Season18_19} />
         <Route path="/all-teams" component={AllTeams} />
-        <Route path="/api-test-table" component={API} />
       </header>
     </div>
     </Router>
