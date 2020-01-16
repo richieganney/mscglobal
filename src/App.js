@@ -8,6 +8,7 @@ import './styles.css'
 import AllTables from './components/TablesAndResults/AllTables';
 import AllTeams from './components/AllTeams';
 import SocialInfo from './components/SocialInfo';
+import MatchReports from './components/MatchReports';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/season/18-19" component={Season18_19} />
         <Route path="/all-teams" component={AllTeams} />
         <Route path="/social-info" component={SocialInfo} />
+        <Route path="/match-reports" component={MatchReports} />
       </header>
     </div>
     </Router>

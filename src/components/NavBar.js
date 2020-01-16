@@ -29,8 +29,11 @@ class NavBar extends Component {
                     <div id="about"><Nav.Link eventKey={2} href="/about">
                     About
                     </Nav.Link></div>
-                    <div id="apiTestTable"><Nav.Link eventKey={2} href="/social-info">
+                    <div id="social-info"><Nav.Link eventKey={2} href="/social-info">
                     Social Info
+                    </Nav.Link></div>
+                    <div id="match-reports"><Nav.Link eventKey={2} href="/match-reports">
+                    Match Reports
                     </Nav.Link></div>
                     </Nav>
                     </Navbar.Collapse>
