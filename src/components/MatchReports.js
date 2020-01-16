@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Document, Page } from 'react-pdf';
 
 class MatchReports extends Component {
     render() {

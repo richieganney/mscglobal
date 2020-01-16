@@ -14,7 +14,6 @@
     "react-fancybox": "^0.2.5",
     "react-image-gallery": "^0.9.1",
     "react-image-video-gallery": "^0.8.18",
-    "react-pdf": "^4.1.0",
     "react-router-dom": "^5.1.1",
     "react-scripts": "^3.3.0",
     "video-react": "^0.14.1"
