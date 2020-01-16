@@ -26,18 +26,31 @@ class TablesAndResults19_20 extends Component {
                     <tr style={style}>
                         <td>1</td>
                         <th>Richie's Rovers</th>
-                        <td>5</td>
+                        <td>6</td>
                         <td>4</td>
-                        <td>0</td>
                         <td>1</td>
-                        <td>123</td>
-                        <td>49</td>
-                        <td>74</td>
-                        <td>12</td>
+                        <td>1</td>
+                        <td>144</td>
+                        <td>73</td>
+                        <td>71</td>
+                        <td>13</td>
                     </tr>
 
                     <tr style={style}>
                         <td>2</td>
+                        <th>Fortuna Müzzeldorf</th>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>129</td>
+                        <td>89</td>
+                        <td>40</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr style={style}>
+                        <td>3</td>
                         <th>AFC Bournemurf</th>
                         <td>3</td>
                         <td>3</td>
@@ -46,19 +59,6 @@ class TablesAndResults19_20 extends Component {
                         <td>92</td>
                         <td>41</td>
                         <td>51</td>
-                        <td>9</td>
-                    </tr>
-
-                    <tr style={style}>
-                        <td>3</td>
-                        <th>Fortuna Müzzeldorf</th>
-                        <td>4</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>105</td>
-                        <td>68</td>
-                        <td>37</td>
                         <td>9</td>
                     </tr>
 
