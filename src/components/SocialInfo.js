@@ -15,14 +15,13 @@ class SocialInfo extends Component {
         const dbaDirections = 'https://www.google.com/maps/place/De+Beauvoir+Arms/@51.5416582,-0.0873167,17z/data=!3m1!4b1!4m5!3m4!1s0x48761c9a2c906ee1:0xc5c6de7e7968e647!8m2!3d51.5416549!4d-0.085128'
         return (
             <div>
-               <center><h1>Coming Soon</h1></center>
+               <center><h1>Thursday 6th February</h1></center>
                <center><div><Card style={{ width: '40rem' }}>
                     <Card.Img variant="top" src={Alwyn} />
                     <Card.Body>
                         <Card.Title>1. Alwyn Castle</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        With a name that sounds distinctly like a certain Wales and Lions legend, where better to start our pub crawl during the first week of the 6 Nations. This versatile boozer has a fantastic beer garden that during the festive season doubles up as the go-to place for Christmas trees. Rumour has it the boys at 358a Essex Road are hoping to get a decade’s worth of us out of their 2018 purchase.
                         </Card.Text>
                         <a href={alwynDirections}>Directions</a>
                     </Card.Body>
@@ -32,8 +31,7 @@ class SocialInfo extends Component {
                     <Card.Body>
                         <Card.Title>2. Canonbury Tavern</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        ‘This sophisticated pub in a 19th-century building offers a British gastro menu and garden seating.’ Only a sporting league with such a rich history and level of class would be welcomed in such an establishment. Another versatile pub. Excellent food menu and an unrivalled beer garden attracts a more mature Islington crowd.
                         </Card.Text>
                         <a href={canonDirections}>Directions</a>
                     </Card.Body>
@@ -43,8 +41,7 @@ class SocialInfo extends Component {
                     <Card.Body>
                         <Card.Title>3. Warm Beer Cold Fire</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        Don’t be fooled by their misleading marketing, the fire is in fact warm and the beer cold. Out of all the establishments on tonight’s route, this is probably the least well known to the MSLD3 Committee. On our few visits here we have been warmly welcomed and enjoyed their delicious range of refreshments.
                         </Card.Text>
                         <a href={wbcfDirections}>Directions</a>
                     </Card.Body>
@@ -54,8 +51,7 @@ class SocialInfo extends Component {
                     <Card.Body>
                         <Card.Title>4. The Lord Clyde</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        No Richie, we are not stopping at My Favourite Café for Veggie Breakfast Set 6. The Lord Clyde, such a good pub. A real mix of staff - from friendly James, to glorious barmaid, to very strange indeed moustache man. This pub in particular feels like a true local. Not quite as lively as some of its neighbouring watering holes but what it lacks in punters it makes up for in character.
                         </Card.Text>
                         <a href={clydeDirections}>Directions</a>
                     </Card.Body>
@@ -65,8 +61,7 @@ class SocialInfo extends Component {
                     <Card.Body>
                         <Card.Title>5. DBA</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        Last but by no means least, the pub that needs no introduction and is the true home of the Mongols is the DBA. If the DBA did loyalty points the league’s beloved Mango would certainly be a Platinum Member. Expect continuous Guinness challenges and a frosty receptions from staff and locals alike.
                         </Card.Text>
                         <a href={dbaDirections}>Directions</a>
                     </Card.Body>

@@ -5,7 +5,7 @@ class TablesAndResults19_20 extends Component {
     render() {
         return (
             <div>
-                                <h2>2019/2020</h2>
+                <h2>2019/2020</h2>
                 <Table responsive>
                     <thead>
                         <tr>

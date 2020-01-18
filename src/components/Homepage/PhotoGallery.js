@@ -8,7 +8,7 @@ import Balls from '../../photos_and_videos/homepage/balls.jpeg'
 import DelfonsoMango from '../../photos_and_videos/homepage/delfonso_mango.jpeg'
 import Titanic from '../../photos_and_videos/homepage/titanic.jpeg'
 import Social from '../../photos_and_videos/homepage/social.jpeg'
-import Mango from '../../photos_and_videos/homepage/mango_icecream.jpeg'
+import Mango from '../../photos_and_videos/homepage/mango_yoghurt.jpeg'
 import '../../styles.css'
 
 class PhotoGallery extends Component {
