@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PhotoGallery from './PhotoGallery';
+import Weather from './Weather';
 
 class Homepage extends Component {
     render() {
@@ -7,6 +8,7 @@ class Homepage extends Component {
             <div id="mscHeader">
                 <PhotoGallery/>
                 <h1 style={overlayStyle}>Here at the <span style={spanStyle}>MSC</span>, people are at the heart<br></br>of what we do</h1>
+                <Weather/>
             </div>
         );
     }

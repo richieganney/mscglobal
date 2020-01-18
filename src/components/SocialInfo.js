@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap';
-import Alwyn from '../photos_and_videos/README.jpg'
-import CanonTav from '../photos_and_videos/canonbury_tav.jpg'
-import Merch from '../photos_and_videos/myddleton-outside-pub.jpg'
-import Clyde from '../photos_and_videos/lord_clyde.jpg'
-import DBA from '../photos_and_videos/de_beauvoir.jpeg'
+import Alwyn from '../photos_and_videos/boozers/README.jpg'
+import CanonTav from '../photos_and_videos/boozers/canonbury_tav.jpg'
+import Merch from '../photos_and_videos/boozers/myddleton-outside-pub.jpg'
+import Clyde from '../photos_and_videos/boozers/lord_clyde.jpg'
+import DBA from '../photos_and_videos/boozers/de_beauvoir.jpeg'
 
 class SocialInfo extends Component {
     render() {

@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "cypress": "^3.4.1",
+    "dotenv-webpack": "^1.7.0",
     "fancybox": "^3.0.1"
   }
 }
