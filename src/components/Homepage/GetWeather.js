@@ -84,9 +84,9 @@ class GetWeather extends Component {
                     <Card.Body>
                         <Card.Title>BLC Weather - {condition.text}</Card.Title>
                         <Card.Text>
-                        <li>Feels Like: {feelslike_c}c</li>
-                        <li>Wind Speed: {gust_mph}mph</li>
-                        <li>Humidity: {humidity}</li>
+                        <li style={listStyle}>Feels Like: {feelslike_c}c</li>
+                        <li style={listStyle}>Wind Speed: {gust_mph}mph</li>
+                        <li style={listStyle}>Humidity: {humidity}</li>
                         </Card.Text>
                     </Card.Body>
                     </Card>
@@ -105,7 +105,15 @@ const overlayStyle = {
     left: '30px',
     right: '0',
     bottom: '0',
+    color: '#7B67C9',
+    fontFamily: 'montserrat',
+    fontWeight: 'bold',
     zIndex: '2' /* Specify a stack order in case you're using a different order for other elements */
+}
+
+const listStyle = {
+    color: '#7B67C9',
+    fontFamily: 'montserrat'
 }
 
 export default GetWeather;
