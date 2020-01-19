@@ -13,23 +13,40 @@ class GetWeather extends Component {
         super(props);
         this.state =
         {
-        weather: [],
-        loaded: false
+        BLCweather: [],
+        MongolianWeather: [],
+        BLCLoaded: false,
+        MongoliaLoaded: false
         };
-        this.getTheWeather = this.getTheWeather.bind(this);
+        this.getBLCWeather = this.getBLCWeather.bind(this);
+        this.getMongolianWeather = this.getMongolianWeather.bind(this);
         this.weatherImage = this.weatherImage.bind(this);
     }
 
-    async componentDidMount() {
-        this.getTheWeather();
+    componentDidMount() {
+        this.getBLCWeather();
+        this.getMongolianWeather();
       }
 
-    getTheWeather(){
+    getBLCWeather(){
         const url = `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=N15JU`
         axios.get(url)
         .then(res => {
             console.log('state')
-            this.setState({ weather: res.data.current, loaded: true });
+            this.setState({ BLCweather: res.data.current, BLCLoaded: true });
+            console.log(this.state)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    }
+
+    getMongolianWeather(){
+        const url = `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=Ulaanbaatar`
+        axios.get(url)
+        .then(res => {
+            console.log('state')
+            this.setState({ MongoliaWeather: res.data.current, MongoliaLoaded: true });
             console.log(this.state)
         })
         .catch(error => {
@@ -38,7 +55,7 @@ class GetWeather extends Component {
     }
 
     weatherImage(){
-        const currentWeather = this.state.weather.condition.text
+        const currentWeather = this.state.BLCweather.condition.text
         if(currentWeather.includes("Sunny")){
             return Sun
         }
@@ -57,13 +74,13 @@ class GetWeather extends Component {
       }
 
     render() {
-        const { condition, feelslike_c, gust_mph, humidity } = this.state.weather
+        const { condition, feelslike_c, gust_mph, humidity } = this.state.BLCweather;
         return (
             <div>
-              {this.state.loaded === true ? 
+              {this.state.BLCLoaded && this.state.MongoliaLoaded === true ? 
                     <div>
                     <Card style={overlayStyle}>
-                    <Card.Img variant="top" src={this.weatherImage()} />
+                    <Card.Img variant="top" src={condition.icon} />
                     <Card.Body>
                         <Card.Title>BLC Weather - {condition.text}</Card.Title>
                         <Card.Text>
