@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import Alwyn from '../photos_and_videos/boozers/README.jpg'
 import CanonTav from '../photos_and_videos/boozers/canonbury_tav.jpg'
 import Merch from '../photos_and_videos/boozers/myddleton-outside-pub.jpg'
