@@ -74,7 +74,7 @@ class GetWeather extends Component {
       }
 
     render() {
-        const { condition, feelslike_c, gust_mph, humidity } = this.state.BLCweather;
+        const { condition, feelslike_c, wind_mph, humidity, wind_dir, vis_miles } = this.state.BLCweather;
         return (
             <div>
               {this.state.BLCLoaded && this.state.MongoliaLoaded === true ? 
@@ -85,7 +85,9 @@ class GetWeather extends Component {
                         <Card.Title>BLC Weather - {condition.text}</Card.Title>
                         <Card.Text>
                         <li style={listStyle}>Feels Like: {feelslike_c}c</li>
-                        <li style={listStyle}>Wind Speed: {gust_mph}mph</li>
+                        <li style={listStyle}>Wind Speed: {wind_mph}mph</li>
+                        <li style={listStyle}>Wind Direction: {wind_dir}</li>
+                        <li style={listStyle}>Visibility: {vis_miles} miles</li>
                         <li style={listStyle}>Humidity: {humidity}</li>
                         </Card.Text>
                     </Card.Body>
@@ -108,6 +110,7 @@ const overlayStyle = {
     color: '#7B67C9',
     fontFamily: 'montserrat',
     fontWeight: 'bold',
+
     zIndex: '2' /* Specify a stack order in case you're using a different order for other elements */
 }
 
