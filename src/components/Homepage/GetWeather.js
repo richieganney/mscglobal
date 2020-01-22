@@ -110,7 +110,6 @@ const overlayStyle = {
     color: '#7B67C9',
     fontFamily: 'montserrat',
     fontWeight: 'bold',
-
     zIndex: '2' /* Specify a stack order in case you're using a different order for other elements */
 }
 
