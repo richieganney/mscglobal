@@ -91,27 +91,27 @@ class TablesAndResults19_20 extends Component {
                     <tr>
                         <td>6</td>
                         <th>Esampdoria</th>
+                        <td>2</td>
                         <td>1</td>
                         <td>1</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>27</td>
-                        <td>8</td>
-                        <td>19</td>
-                        <td>3</td>
+                        <td>53</td>
+                        <td>38</td>
+                        <td>15</td>
+                        <td>4</td>
                         </tr>
 
                         <tr>
                         <td>7</td>
                         <th>Brumbies</th>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>51</td>
-                        <td>45</td>
-                        <td>6</td>
                         <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>81</td>
+                        <td>71</td>
+                        <td>10</td>
+                        <td>4</td>
                         </tr>
 
                         <tr>
