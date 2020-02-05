@@ -64,6 +64,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>4</td>
+                        <th>Esampdoria</th>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>116</td>
+                        <td>84</td>
+                        <td>32</td>
+                        <td>10</td>
+                        </tr>
+
+                    <tr>
+                        <td>5</td>
                         <th>AFC Bournemurf</th>
                         <td>3</td>
                         <td>3</td>
@@ -75,29 +88,16 @@ class TablesAndResults19_20 extends Component {
                         <td>9</td>
                     </tr>
 
-                        <tr>
-                        <td>5</td>
-                        <th>Esampdoria</th>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>81</td>
-                        <td>57</td>
-                        <td>24</td>
-                        <td>7</td>
-                        </tr>
-
                     <tr>
                         <td>6</td>
                         <th>Chadrington Stanley</th>
-                        <td>5</td>
+                        <td>6</td>
                         <td>2</td>
                         <td>0</td>
-                        <td>3</td>
-                        <td>84</td>
-                        <td>101</td>
-                        <td>-17</td>
+                        <td>4</td>
+                        <td>111</td>
+                        <td>136</td>
+                        <td>-25</td>
                         <td>6</td>
                     </tr>
 
