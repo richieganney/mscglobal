@@ -37,6 +37,19 @@ class TablesAndResults19_20 extends Component {
                     </tr>
 
                     <tr style={style}>
+                        <td>3</td>
+                        <th>Fortuna Müzzeldorf</th>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>156</td>
+                        <td>106</td>
+                        <td>50</td>
+                        <td>13</td>
+                    </tr>
+
+                    <tr style={style}>
                         <td>2</td>
                         <th>The Greenberg Packers</th>
                         <td>5</td>
@@ -50,28 +63,15 @@ class TablesAndResults19_20 extends Component {
                         </tr>
 
                     <tr style={style}>
-                        <td>3</td>
-                        <th>Fortuna Müzzeldorf</th>
+                        <td>4</td>
+                        <th>Esampdoria</th>
                         <td>5</td>
                         <td>3</td>
                         <td>1</td>
                         <td>1</td>
-                        <td>129</td>
-                        <td>89</td>
-                        <td>40</td>
-                        <td>10</td>
-                    </tr>
-
-                    <tr style={style}>
-                        <td>4</td>
-                        <th>Esampdoria</th>
-                        <td>4</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>116</td>
-                        <td>84</td>
-                        <td>32</td>
+                        <td>133</td>
+                        <td>111</td>
+                        <td>22</td>
                         <td>10</td>
                         </tr>
 
