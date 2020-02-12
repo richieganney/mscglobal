@@ -26,27 +26,27 @@ class TablesAndResults19_20 extends Component {
                     <tr style={style}>
                         <td>1</td>
                         <th>Richie's Rovers</th>
-                        <td>7</td>
-                        <td>5</td>
+                        <td>8</td>
+                        <td>6</td>
                         <td>1</td>
                         <td>1</td>
-                        <td>171</td>
-                        <td>76</td>
-                        <td>95</td>
-                        <td>16</td>
+                        <td>198</td>
+                        <td>83</td>
+                        <td>115</td>
+                        <td>19</td>
                     </tr>
 
                     <tr style={style}>
                         <td>3</td>
                         <th>Fortuna Müzzeldorf</th>
-                        <td>6</td>
-                        <td>4</td>
+                        <td>7</td>
+                        <td>5</td>
                         <td>1</td>
                         <td>1</td>
-                        <td>156</td>
-                        <td>106</td>
-                        <td>50</td>
-                        <td>13</td>
+                        <td>183</td>
+                        <td>115</td>
+                        <td>68</td>
+                        <td>16</td>
                     </tr>
 
                     <tr style={style}>
@@ -130,40 +130,40 @@ class TablesAndResults19_20 extends Component {
                         <tr>
                         <td>9</td>
                         <th>The Jimboks</th>
-                        <td>5</td>
+                        <td>7</td>
                         <td>1</td>
                         <td>0</td>
-                        <td>4</td>
-                        <td>79</td>
-                        <td>123</td>
-                        <td>-44</td>
+                        <td>6</td>
+                        <td>95</td>
+                        <td>177</td>
+                        <td>-82</td>
                         <td>3</td>
                         </tr>
 
                         <tr>
                         <td>10</td>
                         <th>Shorn Hub</th>
-                        <td>2</td>
+                        <td>3</td>
                         <td>0</td>
-                        <td>0</td>
+                        <td>1</td>
                         <td>2</td>
-                        <td>10</td>
-                        <td>54</td>
+                        <td>36</td>
+                        <td>80</td>
                         <td>-44</td>
-                        <td>0</td>
+                        <td>1</td>
                         </tr>
 
                         <tr>
                         <td>11</td>
                         <th>Alfonso Mango</th>
-                        <td>5</td>
+                        <td>6</td>
                         <td>0</td>
-                        <td>0</td>
+                        <td>1</td>
                         <td>5</td>
-                        <td>40</td>
-                        <td>135</td>
+                        <td>66</td>
+                        <td>161</td>
                         <td>-95</td>
-                        <td>0</td>
+                        <td>1</td>
                         </tr>
 
                     </tbody>
