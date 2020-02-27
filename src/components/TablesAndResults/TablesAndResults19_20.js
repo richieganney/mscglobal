@@ -52,13 +52,13 @@ class TablesAndResults19_20 extends Component {
                     <tr style={style}>
                         <td>3</td>
                         <th>The Greenberg Packers</th>
-                        <td>5</td>
+                        <td>6</td>
                         <td>4</td>
                         <td>0</td>
-                        <td>1</td>
-                        <td>119</td>
-                        <td>79</td>
-                        <td>40</td>
+                        <td>2</td>
+                        <td>144</td>
+                        <td>111</td>
+                        <td>33</td>
                         <td>12</td>
                     </tr>
 
@@ -104,14 +104,14 @@ class TablesAndResults19_20 extends Component {
                         <tr>
                         <td>7</td>
                         <th>Brumbies</th>
-                        <td>4</td>
-                        <td>1</td>
+                        <td>5</td>
+                        <td>2</td>
                         <td>1</td>
                         <td>2</td>
-                        <td>84</td>
-                        <td>98</td>
-                        <td>-14</td>
-                        <td>4</td>
+                        <td>116</td>
+                        <td>123</td>
+                        <td>-7</td>
+                        <td>7</td>
                         </tr>
 
                         <tr>
