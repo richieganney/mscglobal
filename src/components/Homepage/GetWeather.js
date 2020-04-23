@@ -20,7 +20,6 @@ class GetWeather extends Component {
         };
         this.getBLCWeather = this.getBLCWeather.bind(this);
         this.getMongolianWeather = this.getMongolianWeather.bind(this);
-        this.weatherImage = this.weatherImage.bind(this);
     }
 
     componentDidMount() {
@@ -53,25 +52,6 @@ class GetWeather extends Component {
             console.log(error)
         })
     }
-
-    weatherImage(){
-        const currentWeather = this.state.BLCweather.condition.text
-        if(currentWeather.includes("Sunny")){
-            return Sun
-        }
-        if(currentWeather.includes("Cloud")){
-            return Cloud
-        }
-        if(currentWeather.includes("Snow")){
-            return Snow
-        }
-        if(currentWeather.includes("Rain")){
-            return Rain
-        }
-        if(currentWeather.includes("Clear")){
-            return Clear
-        }
-      }
 
     render() {
         const { condition, feelslike_c, wind_mph, humidity, wind_dir, vis_miles } = this.state.BLCweather;
