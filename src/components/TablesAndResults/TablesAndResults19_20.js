@@ -39,14 +39,14 @@ class TablesAndResults19_20 extends Component {
                     <tr style={style}>
                         <td>2</td>
                         <th>Fortuna Müzzeldorf</th>
-                        <td>6</td>
+                        <td>7</td>
                         <td>4</td>
+                        <td>2</td>
                         <td>1</td>
-                        <td>1</td>
-                        <td>156</td>
-                        <td>98</td>
-                        <td>58</td>
-                        <td>13</td>
+                        <td>175</td>
+                        <td>123</td>
+                        <td>52</td>
+                        <td>14</td>
                     </tr>
 
                     <tr style={style}>
@@ -64,6 +64,19 @@ class TablesAndResults19_20 extends Component {
 
                     <tr style={style}>
                         <td>4</td>
+                        <th>The Greenberg Packers</th>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>164</td>
+                        <td>149</td>
+                        <td>15</td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
                         <th>Chadrington Stanley</th>
                         <td>6</td>
                         <td>3</td>
@@ -73,19 +86,6 @@ class TablesAndResults19_20 extends Component {
                         <td>119</td>
                         <td>-8</td>
                         <td>9</td>
-                    </tr>
-
-                    <tr>
-                        <td>5</td>
-                        <th>The Greenberg Packers</th>
-                        <td>6</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>139</td>
-                        <td>130</td>
-                        <td>9</td>
-                        <td>8</td>
                     </tr>
 
                         <tr>
