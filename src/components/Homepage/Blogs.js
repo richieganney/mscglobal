@@ -72,7 +72,10 @@ const overlayStyle = {
   width: '1000px',
   borderRadius: '25px',
   padding: '10px',
-  top: '400px'
+  top: '250px',
+  left: '30px',
+  right: '0',
+  bottom: '0',
 }
 
 const titleStyle = {
