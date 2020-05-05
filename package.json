@@ -12,6 +12,7 @@
     "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.10.1",
     "react-fancybox": "^0.2.5",
+    "react-html-parser": "^2.0.2",
     "react-image-gallery": "^0.9.1",
     "react-image-video-gallery": "^0.8.18",
     "react-router-dom": "^5.1.1",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "cypress": "^3.4.1",
+    "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.7.0",
     "fancybox": "^3.0.1"
   }

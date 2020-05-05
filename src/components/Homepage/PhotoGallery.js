@@ -44,11 +44,16 @@ class PhotoGallery extends Component {
           ];
 
         return (
-            <div>
+            <div style={photoStyle}>
                 <ImageGallery items={images} autoPlay slideInterval={4000} slideDuration={2000} />
             </div>
         );
     }
+}
+
+const photoStyle = {
+  position: 'absolute',
+  width: '120rem'
 }
 
 export default PhotoGallery;

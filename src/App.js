@@ -9,6 +9,7 @@ import AllTables from './components/TablesAndResults/AllTables';
 import AllTeams from './components/AllTeams';
 import SocialInfo from './components/SocialInfo';
 import MatchReports from './components/MatchReports';
+import ViewBlog from './components/Homepage/ViewBlog';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/all-teams" component={AllTeams} />
         <Route path="/social-info" component={SocialInfo} />
         <Route path="/match-reports" component={MatchReports} />
+        <Route path='/blogs/:postId/:postTitle' component={ViewBlog}/>
       </header>
     </div>
     </Router>
