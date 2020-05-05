@@ -40,7 +40,8 @@ class Blogs extends React.Component {
         <Link to={{
             pathname: `/blogs/${blog.ID}/${blog.title}`,
             state: {
-                id: blog.ID
+                id: blog.ID,
+                key: blog.ID
             }
         }}>
         <ul className="list-unstyled">

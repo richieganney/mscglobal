@@ -6,7 +6,7 @@ import Blogs from './Blogs';
 class Homepage extends Component {
     render() {
         return (
-            <div id="mscHeader">
+            <div id="mscHeader" key='mcsHeader'>
                 <PhotoGallery/>
                 <h1 style={overlayStyle}>Here at the <span style={spanStyle}>MSC</span>, people are at the heart<br></br>of what we do</h1>
                 <Blogs/>
@@ -16,7 +16,7 @@ class Homepage extends Component {
 }
 
 const overlayStyle = {
-    position: 'absolute', /* Sit on top of the page content */
+    position: 'relative', /* Sit on top of the page content */
     width: '100%', /* Full width (cover the whole page) */
     height: '100%', /* Full height (cover the whole page) */
     top: '100px',
