@@ -47,7 +47,8 @@ class ViewBlog extends React.Component {
 }
 
 const contentStyle = {
-    width: '100rem'
+    marginLeft: '20px',
+    marginRight: '20px'
 }
 
 export default ViewBlog;
