@@ -36,7 +36,7 @@ class Blogs extends React.Component {
   render() {
     return this.state.blogs.map((blog) => (
     <div>
-    <div style={overlayStyle}>
+    <div className='homepage-blog-list'>
         <Link to={{
             pathname: `/blogs/${blog.ID}/${blog.title}`,
             state: {
@@ -49,14 +49,13 @@ class Blogs extends React.Component {
             <img
             width={170}
             height={170}
-            className="mr-3"
-            style={imageStyle}
+            className='homepage-blog-image'
             src={blog.featured_image}
             alt="Generic placeholder"
             />
             <Media.Body>
-            <h5 style={titleStyle}>{blog.title}</h5>
-            <p style={bodyStyle}>{ ReactHtmlParser(blog.excerpt) }</p>
+            <h5 className='homepage-blog-title'>{blog.title}</h5>
+            <p className='homepage-blog-body'>{ ReactHtmlParser(blog.excerpt) }</p>
             </Media.Body>
         </Media>
         </ul>
@@ -65,33 +64,6 @@ class Blogs extends React.Component {
     </div>
       ));
   }
-}
-
-const overlayStyle = {
-  position: 'relative',
-  backgroundColor: '#7B67C9',
-  width: '1000px',
-  borderRadius: '25px',
-  padding: '10px',
-  top: '250px',
-  left: '30px',
-  right: '0',
-  bottom: '0',
-  fontFamily: 'montserrat'
-}
-
-const titleStyle = {
-  color: '#ffffff',
-  fontWeight: 'bold'
-}
-
-const bodyStyle = {
-  color: '#ffffff'
-}
-
-const imageStyle = {
-  borderRadius: '25px',
-  padding: '10px'
 }
 
 export default Blogs;

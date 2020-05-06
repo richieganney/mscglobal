@@ -134,7 +134,7 @@ body {
 }
 
 .blog-footer {
-  margin-left: 300px;
+  margin-left: 150px;
   font-weight: bold;
   color: #7B67C9;
   font-family: montserrat;
@@ -152,11 +152,46 @@ body {
     bottom: 0px;
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     font-family: montserrat;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 80px;
 }
 
 .homepage-span {
   color: #7B67C9
+}
+
+.homepage-blog-list {
+  position: relative;
+  background-color: #7B67C9;
+  width: 1400px;
+  height: 500px;
+  border-radius: 25px;
+  padding: 10px;
+  top: 250px;
+  left: 30px;
+  right: 0;
+  bottom: 0;
+  font-family: montserrat;
+  font-size: 40px;
+}
+
+.homepage-blog-title {
+  margin-top: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.homepage-blog-body {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.homepage-blog-image {
+  border-radius: 25px;
+  padding: 10px;
+  width: 450px;
+  height: 450px;
 }
 }
 
@@ -201,5 +236,34 @@ body {
 
 .homepage-span {
   color: #7B67C9
+}
+
+.homepage-blog-list {
+  position: relative;
+  background-color: #7B67C9;
+  width: 1000px;
+  border-radius: 25px;
+  padding: 10px;
+  top: 250px;
+  left: 30px;
+  right: 0;
+  bottom: 0;
+  font-family: montserrat;
+}
+
+.homepage-blog-title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.homepage-blog-body {
+  color: #ffffff;
+}
+
+.homepage-blog-image {
+  border-radius: 25px;
+  padding: 10px;
+  width: 170px;
+  height: 170px;
 }
 }
