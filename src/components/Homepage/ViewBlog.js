@@ -35,10 +35,10 @@ class ViewBlog extends React.Component {
         <div>
           {this.state.blogLoaded === true ? 
                 <div>
-                <h1>{title}</h1>
+                <center><h1 style={titleStyle}>{title}</h1><br></br><br></br></center>
                 <p style={contentStyle}>{ ReactHtmlParser(content) }</p>
-                <p>{date}</p>
-                <p>likes: {like_count}</p>
+                <p style={footerStyle}>{date}</p>
+                <p style={footerStyle}>likes: {like_count}</p>
                 </div>
                 : null}
         </div>
@@ -46,9 +46,21 @@ class ViewBlog extends React.Component {
   }
 }
 
+const titleStyle = {
+  fontWeight: 'bold',
+  marginTop: '30px'
+}
+
 const contentStyle = {
-    marginLeft: '20px',
-    marginRight: '20px'
+    marginLeft: '400px',
+    marginRight: '400px',
+    fontSize: '35px'
+}
+
+const footerStyle = {
+  marginLeft: '400px',
+  fontWeight: 'bold',
+  color: '#7B67C9'
 }
 
 export default ViewBlog;
