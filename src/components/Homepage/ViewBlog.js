@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import '../../styles.css'
 
 class ViewBlog extends React.Component {
   constructor() {
@@ -35,10 +36,10 @@ class ViewBlog extends React.Component {
         <div>
           {this.state.blogLoaded === true ? 
                 <div>
-                <center><h1 style={titleStyle}>{title}</h1><br></br><br></br></center>
-                <p style={contentStyle}>{ ReactHtmlParser(content) }</p>
-                <p style={footerStyle}>{date}</p>
-                <p style={footerStyle}>likes: {like_count}</p>
+                <center><h1 className='blog-title'>{title}</h1><br></br><br></br></center>
+                <p className='blog-content'>{ ReactHtmlParser(content) }</p>
+                <p className='blog-footer'>{date}</p>
+                <p className='blog-footer'>likes: {like_count}</p>
                 </div>
                 : null}
         </div>
@@ -52,9 +53,9 @@ const titleStyle = {
 }
 
 const contentStyle = {
-    marginLeft: '400px',
-    marginRight: '400px',
-    fontSize: '35px'
+    marginLeft: '300px',
+    marginRight: '300px',
+    fontSize: '25px'
 }
 
 const footerStyle = {
