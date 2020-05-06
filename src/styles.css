@@ -119,6 +119,13 @@ body {
 
 
 
+
+
+
+
+
+
+
 /* MOBILE SITE CSS */
 
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -188,7 +195,7 @@ body {
     position: relative;
     top: 200px;
     overflow-y: scroll;
-    max-height: 450px;
+    max-height: 750px;
     position: relative;
     width: 1400px;
     border-radius: 25px;
@@ -198,11 +205,12 @@ body {
     bottom: 0;
     font-family: montserrat;
     border-style: inset;
+    background-color: rgb(115, 199, 227);
 }
 
-.homepage-blog-container {
+/* .homepage-blog-container {
   background-color: rgb(115, 199, 227);
-}
+} */
 
 .homepage-blog-list {
   position: relative;
@@ -241,6 +249,16 @@ body {
 }
 }
 
+
+
+
+
+
+
+
+
+
+
 /* DESKTOP SITE css */
 
 @media (min-width: 1001px) and (max-width: 5000px) {
@@ -267,9 +285,9 @@ body {
 
 /* homepage css */
 
-.homepage-blog-container {
+/* .homepage-blog-container {
   background-color: rgb(115, 199, 227);
-}
+} */
 
 .homepage-header {
     position: relative; /* Sit on top of the page content */
@@ -316,6 +334,7 @@ body {
     bottom: 0;
     font-family: montserrat;
     border-style: inset;
+    background-color: rgb(115, 199, 227);
 }
 
 .homepage-blog-list {

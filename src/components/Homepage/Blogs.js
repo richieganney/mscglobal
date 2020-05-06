@@ -35,7 +35,7 @@ class Blogs extends React.Component {
 
   render() {
     return this.state.blogs.map((blog) => (
-    <div className='homepage-blog-container'>
+    <div>
     <div className='homepage-blog-list'>
         <Link to={{
             pathname: `/blogs/${blog.ID}/${blog.title}`,
