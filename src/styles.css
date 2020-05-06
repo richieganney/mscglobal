@@ -123,10 +123,6 @@ body {
 
 @media (min-width: 600px) and (max-width: 1000px) {
 
-.nav-bar {
-  width: 150%;
-}
-
 .photo-slider {
     position: absolute;
     width: 150%;
@@ -252,6 +248,24 @@ body {
 
 .homepage-span {
   color: #7B67C9
+}
+
+.blog-list-style {
+    position: relative;
+    margin: 100px; 
+    overflow-y: scroll;
+    max-height: 250px;
+    position: relative;
+    color: #064579;
+    width: 1100px;
+    max-height: 250px;
+    border-radius: 30px;
+    padding: 10px;
+    top: 250px;
+    left: 30px;
+    right: 0;
+    bottom: 0;
+    font-family: montserrat;
 }
 
 .homepage-blog-list {
