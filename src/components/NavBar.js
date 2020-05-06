@@ -5,7 +5,7 @@ import MSC from '../photos_and_videos/new_logo.png'
 class NavBar extends Component {
     render() {
         return (
-            <div id="navBar">
+            <div id="navBar" className='nav-bar'>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand href="/">
                 <img

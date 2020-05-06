@@ -110,16 +110,27 @@ body {
   box-sizing: border-box;
 }
 
-/* @media screen and (max-device-width: 480px){
-  body{
-    -webkit-text-size-adjust: none;
-  }
-} */
+/* PHOTO SLIDER */
+
+.photo-slider {
+  position: absolute;
+  width: 100%;
+}
+
+
 
 /* MOBILE SITE CSS */
 
 @media (min-width: 600px) and (max-width: 1000px) {
 
+.nav-bar {
+  width: 150%;
+}
+
+.photo-slider {
+    position: absolute;
+    width: 150%;
+  }
 .blog-title {
   font-weight: bold;
   margin-top: 30px;
@@ -267,3 +278,8 @@ body {
   height: 170px;
 }
 }
+
+/* html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+} */
