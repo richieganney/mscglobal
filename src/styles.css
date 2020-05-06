@@ -128,6 +128,8 @@ body {
     width: 150%;
 }
 
+/* blog content */
+
 .blog-title {
   font-weight: bold;
   margin-top: 30px;
@@ -164,18 +166,52 @@ body {
     font-size: 80px;
 }
 
+.homepage-post-header {
+  position: relative; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 200px;
+  left: 30px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 150px;
+}
+
 .homepage-span {
   color: #7B67C9
+}
+
+.blog-list-style {
+    position: relative;
+    top: 200px;
+    overflow-y: scroll;
+    max-height: 450px;
+    position: relative;
+    width: 1400px;
+    border-radius: 25px;
+    padding: 0px;
+    left: 30px;
+    right: 0;
+    bottom: 0;
+    font-family: montserrat;
+    border-style: inset;
+}
+
+.homepage-blog-container {
+  background-color: rgb(115, 199, 227);
 }
 
 .homepage-blog-list {
   position: relative;
   background-color: #7B67C9;
-  width: 1400px;
+  width: 1335px;
   height: 500px;
   border-radius: 25px;
   padding: 10px;
-  top: 250px;
+  top: 30px;
   left: 30px;
   right: 0;
   bottom: 0;
@@ -188,11 +224,13 @@ body {
   color: #ffffff;
   font-weight: bold;
   font-size: 40px;
+  margin-left: 30px;
 }
 
 .homepage-blog-body {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
+  margin-left: 30px;
 }
 
 .homepage-blog-image {
@@ -230,14 +268,14 @@ body {
 /* homepage css */
 
 .homepage-blog-container {
-  background-color: #fff;
+  background-color: rgb(115, 199, 227);
 }
 
 .homepage-header {
     position: relative; /* Sit on top of the page content */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
-    top: 100px;
+    top: 50px;
     left: 30px;
     right: 0px;
     bottom: 0px;
@@ -246,26 +284,38 @@ body {
     font-weight: bold
 }
 
+.homepage-post-header {
+  position: relative; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 200px;
+  left: 30px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 80px;
+}
+
 .homepage-span {
   color: #7B67C9
 }
 
 .blog-list-style {
     position: relative;
-    margin: 100px; 
+    top: 200px;
     overflow-y: scroll;
-    max-height: 250px;
+    max-height: 450px;
     position: relative;
-    color: #064579;
     width: 1100px;
-    max-height: 250px;
-    border-radius: 30px;
-    padding: 10px;
-    top: 250px;
+    border-radius: 25px;
+    padding: 0px;
     left: 30px;
     right: 0;
     bottom: 0;
     font-family: montserrat;
+    border-style: inset;
 }
 
 .homepage-blog-list {
@@ -274,7 +324,7 @@ body {
   width: 1000px;
   border-radius: 25px;
   padding: 10px;
-  top: 250px;
+  top: 30px;
   left: 30px;
   right: 0;
   bottom: 0;
