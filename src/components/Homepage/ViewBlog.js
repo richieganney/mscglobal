@@ -8,7 +8,7 @@ class ViewBlog extends React.Component {
     super();
     this.state = {
         blog: [],
-        blogLoaded: false,
+        blogLoaded: false
     };
   }
 
@@ -17,7 +17,7 @@ class ViewBlog extends React.Component {
   }
 
   getBlog(){
-    const blogId = this.props.location.state.id
+    const blogId = Number(this.props.location.pathname.replace(/\D/g,''))
     const url = process.env.REACT_APP_API_KEY
     axios.get(`${url}/posts/${blogId}`)
     .then(res => {
