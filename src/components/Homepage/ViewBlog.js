@@ -47,21 +47,4 @@ class ViewBlog extends React.Component {
   }
 }
 
-const titleStyle = {
-  fontWeight: 'bold',
-  marginTop: '30px'
-}
-
-const contentStyle = {
-    marginLeft: '300px',
-    marginRight: '300px',
-    fontSize: '25px'
-}
-
-const footerStyle = {
-  marginLeft: '400px',
-  fontWeight: 'bold',
-  color: '#7B67C9'
-}
-
 export default ViewBlog;

@@ -116,6 +116,48 @@ body {
   }
 }
 
+/* site css */
+
+.blog-title {
+  font-weight: bold;
+  margin-top: 30px;
+  font-family: montserrat;
+}
+
+.blog-content {
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 25px;
+    font-family: montserrat;
+}
+
+.blog-footer {
+  margin-left: 300px;
+  font-weight: bold;
+  color: #7B67C9;
+  font-family: montserrat;
+}
+
+/* homepage css */
+
+.homepage-header {
+    position: relative; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 100px;
+    left: 30px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    font-family: montserrat;
+    font-weight: bold
+}
+
+.homepage-span {
+  color: #7B67C9
+}
+
+/* tablet css */
 @media (min-width: 768px) and (max-width: 991px) {
 }
 /* phone css */
@@ -123,35 +165,20 @@ body {
   .blog-title {
     font-weight: bold;
     margin-top: 30px;
+    font-family: montserrat;
   }
   
   .blog-content {
       margin-left: 150px;
       margin-right: 1500px;
-      font-size: 25px;
+      font-size: 35px;
+      font-family: montserrat;
   }
   
   .blog-footer {
     margin-left: 150px;
     font-weight: bold;
     color: #7B67C9;
+    font-family: montserrat;
   }
-
-}
-
-.blog-title {
-  font-weight: bold;
-  margin-top: 30px;
-}
-
-.blog-content {
-    margin-left: 300px;
-    margin-right: 300px;
-    font-size: 25px;
-}
-
-.blog-footer {
-  margin-left: 300px;
-  font-weight: bold;
-  color: #7B67C9;
 }
