@@ -18,7 +18,7 @@ class ViewBlog extends React.Component {
   }
 
   getBlog(){
-    const blogId = this.props.location.state.id
+    const blogId = this.props.match.params.postId
     const url = process.env.REACT_APP_API_KEY
     axios.get(`${url}/posts/${blogId}`)
     .then(res => {
@@ -31,8 +31,6 @@ class ViewBlog extends React.Component {
 
   render() {
     const { date, title, content, excerpt, like_count } = this.state.blog
-    // const newDate = `${date[0]}${date[1]}${date[2]}${date[3]}${date[4]}${date[5]}${date[6]}${date[7]}${date[8]}${date[9]}`
-    // const mydate = new Date(newDate);
     return (
         <div>
           {this.state.blogLoaded === true ? 
