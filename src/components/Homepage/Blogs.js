@@ -5,6 +5,7 @@ import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from
 import ViewBlog from './ViewBlog';
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
+import '../../styles.css'
 
 class Blogs extends React.Component {
   constructor() {
@@ -34,7 +35,7 @@ class Blogs extends React.Component {
 
   render() {
     return this.state.blogs.map((blog) => (
-    <div>
+    <div className='homepage-blog-container'>
     <div className='homepage-blog-list'>
         <Link to={{
             pathname: `/blogs/${blog.ID}/${blog.title}`,

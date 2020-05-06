@@ -130,7 +130,8 @@ body {
 .photo-slider {
     position: absolute;
     width: 150%;
-  }
+}
+
 .blog-title {
   font-weight: bold;
   margin-top: 30px;
@@ -231,6 +232,10 @@ body {
 }
 
 /* homepage css */
+
+.homepage-blog-container {
+  background-color: #fff;
+}
 
 .homepage-header {
     position: relative; /* Sit on top of the page content */
