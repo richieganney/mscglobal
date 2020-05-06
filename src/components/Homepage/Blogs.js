@@ -25,7 +25,6 @@ class Blogs extends React.Component {
       const url = process.env.REACT_APP_API_KEY
       axios.get(`${url}/posts`)
       .then(res => {
-          console.log('blog state')
           this.setState({ blogs: res.data.posts, blogsLoaded: true });
       })
       .catch(error => {
