@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import '../../styles/player_profiles.css'
+import './player_profiles.css'
 import Shorn from '../../photos_and_videos/all_teams/shorn_hub.jpeg';
 import Brumbies from '../../photos_and_videos/all_teams/brumbies.jpeg';
 import FiveClive from '../../photos_and_videos/all_teams/fiveclive.jpeg';
@@ -14,6 +14,7 @@ import Jimbok from '../../photos_and_videos/all_teams/jimbok.jpeg';
 import Murf from '../../photos_and_videos/all_teams/bournmurf.jpeg';
 import Chadrington from '../../photos_and_videos/all_teams/chadrington.jpeg';
 import Muzzeldorf from '../../photos_and_videos/all_teams/muzzeldorf.jpeg';
+
 import { PieChart } from 'react-minimal-pie-chart';
 
 class ViewPlayer extends React.Component {
@@ -36,9 +37,6 @@ class ViewPlayer extends React.Component {
 
   componentDidMount() {
     this.getPlayer()
-    // if(this.state.playerLoaded) {
-    //     this.setState({ additional: this.state.additional.split() })
-    // }
   }
 
   getPlayer(){
@@ -46,7 +44,7 @@ class ViewPlayer extends React.Component {
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet2!A${playerId}:J${playerId}?key=${process.env.REACT_APP_SHEETS_API_KEY}`
     axios.get(url)
     .then(res => {
-        this.setState({ player: res.data.values, playerLoaded: true,
+        this.setState({ player: res.data.values,
                         name: res.data.values[0][0],
                         description: res.data.values[0][1],
                         image: res.data.values[0][2],
@@ -56,7 +54,8 @@ class ViewPlayer extends React.Component {
                         socialLinks: res.data.values[0][6],
                         quote: res.data.values[0][7],
                         beer: res.data.values[0][8],
-                        byDay: res.data.values[0][9]
+                        byDay: res.data.values[0][9],
+                        playerLoaded: true
         })
     })
     .catch(error => {
@@ -64,59 +63,65 @@ class ViewPlayer extends React.Component {
     })
     }
 
+    splitData(data){
+      return data.split()
+    }
+
     winRate(){
-    const { played, win } = this.props.location.state
-    const finalNum = (Number(win)/Number(played)) * 100
-    return Math.round(finalNum);
+        const { played, win } = this.props.location.state
+        const finalNum = (Number(win)/Number(played)) * 100
+        return Math.round(finalNum);
     }
 
     pointsDropped(){
-    const { played, points } = this.props.location.state
-    const totalPoints = played * 3
-    const finalNum = totalPoints - points
-    return finalNum
+        const { played, points } = this.props.location.state
+        const totalPoints = played * 3
+        const finalNum = totalPoints - points
+        return finalNum
     }
 
     averagePdPerGame(){
       const { played, pointsDifference } = this.props.location.state
       const average = pointsDifference / played
       if(average > 1){
-          return `+ ${average.toFixed(1)}`
+          return `+ ${Math.round(average)}`
       } else {
-          return `${average.toFixed(1)}`
+          return `${Math.round(average)}`
       }
     }
 
   playerImage(){
-    switch(this.state.name) {
-        case "Greenberg Packers":
-          return Packers
-          break;
-        case "Richies Rovers":
-            return Rovers
-          break;
-        case "Fortuna Muzzeldorf":
-            return Muzzeldorf
-          break;
-        case "AFC Bournemurf":
-            return Murf
-          break;
-        case "Chadrington Stanley":
-            return Chadrington
-          break;
-        case "Brumbies":
-            return Brumbies
-          break;
-        case "The Jimboks":
-            return Jimbok
-          break;
-        case "Shorn Hub":
-            return Shorn
-          break;
-        case "Alfonso Mango":
-            return Mangos
-          break;
-      }
+    const { name } = this.state
+    if(name == "The Greenberg Packers"){
+        return Packers
+    } else if(name == "Richie's Rovers"){
+        return Rovers
+    } else if(name == "Fortuna Müzzeldorf"){
+        return Muzzeldorf
+    } else if(name == "AFC Bournemurf"){
+        return Murf
+    } else if(name == "Chadrington Stanley"){
+        return Chadrington
+    } else if(name == "Brumbies"){
+        return Brumbies
+    } else if(name == "The Jimboks"){
+        return Jimbok
+    } else if(name == "Shorn Hub"){
+        return Shorn
+    } else if(name == "Alfonso Mango"){
+        return Mangos
+    } else if(name == "Esampdoria"){
+        return Esampdoria
+    } else if(name == "The Sea Otters"){
+        return SeaOtters
+    } else if(name == "Club Ned Ninks") {
+        return NedJinks
+    } else if(name == "BBC Radio 5 Clive") {
+        return FiveClive
+    }
+    else {
+        return Mangos
+    }
   }
 
   render() {
@@ -131,7 +136,7 @@ class ViewPlayer extends React.Component {
                     <div class="col-md-4">
                         <div class="profile-img">
                             <img
-                            src={this.getPlayer()} alt=""/>
+                            src={this.playerImage()} alt=""/>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -146,10 +151,7 @@ class ViewPlayer extends React.Component {
                             <p class="proile-rating">RANKINGS : <span>{rankings}</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Stats 2019/2020</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
+                                    <h3>Stats 2019/2020</h3>
                                 </li>
                             </ul>
                         </div>
@@ -163,9 +165,9 @@ class ViewPlayer extends React.Component {
                             <a href="">Instagram</a><br/>
                             <a href="">Facebook</a>
                             <p>FROM THE PLAYERS THEMSELVES</p>
-                            <a href="">Quote: {quote}</a><br/>
-                            <a href="">Beer: {beer}</a><br/>
-                            <a href="">By day? {byDay}</a><br/>
+                            <h7><span className='additional-player-info'>Quote:</span> {quote}</h7><br/>
+                            <h7><span className='additional-player-info'>Beer:</span> {beer}</h7><br/>
+                            <h7><span className='additional-player-info'>By day?</span> {byDay}</h7><br/>
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -173,10 +175,10 @@ class ViewPlayer extends React.Component {
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Games Played</label>
+                                                <label>All Games</label>
                                             </div>
                                             <div class="col-md-6">
-                                            {win}, {draw}, {loss}
+                                            <p><span style={green}>{win}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style={amber}>{draw}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style={red}>{loss}</span></p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -192,7 +194,7 @@ class ViewPlayer extends React.Component {
                                                 <label>Points Dropped</label>
                                             </div>
                                             <div class="col-md-6">
-                                        <p>{this.pointsDropped()} / {played * 3}</p>
+                                        <p>{this.pointsDropped()}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -215,4 +217,15 @@ class ViewPlayer extends React.Component {
   }
 }
 
+const green = {
+    color: 'green'
+}
+
+const amber = {
+    color: 'orange'
+}
+
+const red = {
+    color: 'red'
+}
 export default ViewPlayer;

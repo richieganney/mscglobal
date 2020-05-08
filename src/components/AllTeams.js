@@ -14,192 +14,108 @@ import Murf from '../photos_and_videos/all_teams/bournmurf.jpeg';
 import Chadrington from '../photos_and_videos/all_teams/chadrington.jpeg';
 import Muzzeldorf from '../photos_and_videos/all_teams/muzzeldorf.jpeg';
 import Shorn from '../photos_and_videos/all_teams/shorn_hub.jpeg';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class AllTeams extends Component {
-    render() {
-        return (
-            <div>
-                <MDBCard className="my-5 px-5 pb-5 text-center">
-                <MDBCardBody>
-                    <h2 className="h1-responsive font-weight-bold my-5">
-                        South West Division 3
-                    </h2>
-                    <MDBRow>
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure className="container">
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={Esampdoria}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">Esampdoria</h5>
-                        </MDBCol>
 
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={NedJinks}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">Club Ned Jinks</h5>
-                        </MDBCol>
+    constructor() {
+        super();
+        this.state = {
+            players: [],
+            playersLoaded: false
+        };
+      }
 
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={FiveClive}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">BBC Radio Five Clive</h5>
-                        </MDBCol>
-
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={Mangos}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">Alfonso Mango</h5>
-                        </MDBCol>
-
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={Packers}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">The Greenberg Packers</h5>
-                        </MDBCol>
-
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={Brumbies}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">Brumbies</h5>
-                        </MDBCol>
-
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={Rovers}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">Richie's Rovers</h5>
-                        </MDBCol>
-
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={SeaOtters}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">The Sea Otters</h5>
-                        </MDBCol>
-
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={200}
-                                alt="171x180"
-                                src={Murf}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">AFC Bournemurf</h5>
-                        </MDBCol>
-
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={Chadrington}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">Chadrington Stanley</h5>
-                        </MDBCol>
-
-                                                <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={Jimbok}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">Jimbok Squash</h5>
-                        </MDBCol>
-
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={Muzzeldorf}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">Fortuna Müzzeldorf</h5>
-                        </MDBCol>
-
-                        <MDBCol lg="3" md="6" className="mb-lg-0 mb-5">
-                        <Figure>
-                            <Figure.Image
-                                width={171}
-                                height={180}
-                                alt="171x180"
-                                src={Shorn}
-                                className="rounded-circle z-depth-1 img-fluid"
-                            />
-                            </Figure>
-                        <h5 className="font-weight-bold mt-4 mb-3">Shorn Hub</h5>
-                        </MDBCol>
-
-                    </MDBRow>
-                </MDBCardBody>
-            </MDBCard>
-            </div>
-        );
+    componentDidMount(){
+        this.getPlayer()
     }
+
+    getPlayer() {
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet1!A1:K14?key=${process.env.REACT_APP_SHEETS_API_KEY}`
+        axios.get(url)
+        .then(res => {
+            this.setState({ players: res.data.values, playersLoaded: true });
+        })
+        .catch(error => {
+            console.log(error)
+        })
+      }
+
+    renderPlayerData() {
+        return this.state.players.map((player, index) => {
+           return (  
+                <MDBCol lg="3" md="6" className="all-teams-hover">
+                <Link className='link-style' to={{
+              pathname: `/player/${player[10]}/${player[1]}`,
+              state: {
+                  playerId: player[10],
+                  played: player[2],
+                  win: player[3],
+                  draw: player[4],
+                  loss: player[5],
+                  pointsDifference: player[8],
+                  points: player[9]
+              }
+               }}><Figure className="container">
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src={this.playerImage(player[1])}
+                                className="rounded-circle z-depth-1 img-fluid"
+                            />
+                            </Figure></Link>
+                        <h5 className="font-weight-bold mt-4 mb-3">{player[1]}</h5>
+                </MDBCol>
+           )
+        })
+     }
+    
+        playerImage(name){
+            if(name == "The Greenberg Packers"){
+                return Packers
+            } else if(name == "Richie's Rovers"){
+                return Rovers
+            } else if(name == "Fortuna Müzzeldorf"){
+                return Muzzeldorf
+            } else if(name == "AFC Bournemurf"){
+                return Murf
+            } else if(name == "Chadrington Stanley"){
+                return Chadrington
+            } else if(name == "Brumbies"){
+                return Brumbies
+            } else if(name == "The Jimboks"){
+                return Jimbok
+            } else if(name == "Shorn Hub"){
+                return Shorn
+            } else if(name == "Alfonso Mango"){
+                return Mangos
+            } else if(name == "Esampdoria"){
+                return Esampdoria
+            } else if(name == "The Sea Otters"){
+                return SeaOtters
+            } else if(name == "BBC Radio 5 Clive"){
+                return FiveClive
+            } else if(name == "Club Ned Ninks"){
+                return NedJinks
+            }
+            else {
+                return Mangos
+            }
+          }
+
+          render() {
+            return (
+               <div>
+                   <MDBCard className="my-5 px-5 pb-5 text-center">
+                   <MDBRow>
+                   {this.renderPlayerData()}
+                   </MDBRow>
+                   </MDBCard>
+               </div>
+            )
+          }
 }
 
 export default AllTeams;

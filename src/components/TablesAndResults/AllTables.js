@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import TablesAndResults18_19 from './TablesAndResults18_19';
-import TablesAndResults19_20 from './TablesAndResults19_20';
-import { Table } from 'react-bootstrap';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import '../../styles/styles.css'
-import Popup from "reactjs-popup";
 
 class AllTables extends Component {
     
@@ -100,7 +96,7 @@ componentDidMount() {
 }
 
       getTable() {
-        const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet1!A1:K10?key=${process.env.REACT_APP_SHEETS_API_KEY}`
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet1!${this.props.firstArg}:${this.props.secondArg}?key=${process.env.REACT_APP_SHEETS_API_KEY}`
         axios.get(url)
         .then(res => {
             this.setState({ table: res.data.values, tableLoaded: true });
@@ -117,10 +113,6 @@ componentDidMount() {
         }
       }
     }
-
-    // onClick(team){
-    //   console.log(team)
-    // }
 
     renderTableData() {
       this.state.table.shift()
@@ -164,7 +156,6 @@ componentDidMount() {
  render() {
   return (
      <div>
-       <h1 id='title'> South West Division 3 Tables </h1><br></br>
         <table id='students'>
            <tbody>
               <tr>{this.renderTableHeader()}</tr>
