@@ -47,5 +47,3 @@ class ViewBlog extends React.Component {
 }
 
 export default ViewBlog;
-
-

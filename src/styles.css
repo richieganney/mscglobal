@@ -247,6 +247,53 @@ body {
   width: 450px;
   height: 450px;
 }
+
+.table-hover {
+  transition: transform .1s;
+}
+
+.table-hover:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+#title {
+  text-align: center;
+  font-family: montserrat;
+  font-weight: bold;
+}
+
+#students {
+  text-align: center;
+  font-family: montserrat;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+#students td, #students th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#students tr:nth-child(even){background-color: #f2f2f2;}
+
+#students tr:hover {background-color: #ddd;}
+
+#students th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(16, 24, 16);
+  color: white;
+}
+
+.link-style {
+border: none;
+color: tomato;
+font-weight: bold;
+}
 }
 
 
@@ -407,6 +454,12 @@ body {
   text-align: center;
   background-color: rgb(16, 24, 16);
   color: white;
+}
+
+.link-style {
+border: none;
+color: tomato;
+font-weight: bold;
 }
 }
 

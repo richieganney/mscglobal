@@ -10,6 +10,7 @@ import AllTeams from './components/AllTeams';
 import SocialInfo from './components/SocialInfo';
 import MatchReports from './components/MatchReports';
 import ViewBlog from './components/Homepage/ViewBlog';
+import ViewPlayer from './components/TablesAndResults/ViewPlayer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/social-info" component={SocialInfo} />
         <Route path="/match-reports" component={MatchReports} />
         <Route path='/blogs/:postId/:postTitle' component={ViewBlog}/>
+        <Route path='/player/:playerId/:playerName' component={ViewPlayer}/>
       </header>
     </div>
     </Router>
