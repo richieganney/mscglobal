@@ -4,7 +4,7 @@ import TablesAndResults19_20 from './TablesAndResults19_20';
 import { Table } from 'react-bootstrap';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import '../../styles.css'
+import '../../styles/styles.css'
 import Popup from "reactjs-popup";
 
 class AllTables extends Component {
@@ -18,85 +18,85 @@ class AllTables extends Component {
       }
     
 componentDidMount() {
-  // this.getTable()
-  this.setState({
-    table: [{
-      postion: '1',
-      team: 'chadrington',
-      played: '3',
-      win: '3',
-      draw: '5',
-      lose: '3',
-      pf: '50',
-      pa: '75',
-      pd: '-25',
-      p: '8'
-    },{postion: '2',
-    team: 'richies rovers',
-    played: '3',
-    win: '3',
-    draw: '5',
-    lose: '3',
-    pf: '50',
-    pa: '75',
-    pd: '-25',
-    p: '8'},{postion: '3',
-    team: 'fortuna muzzeldorf',
-    played: '4',
-    win: '3',
-    draw: '5',
-    lose: '3',
-    pf: '50',
-    pa: '75',
-    pd: '-25',
-    p: '8'},{postion: '4',
-    team: 'brumbies squash',
-    played: '3',
-    win: '3',
-    draw: '5',
-    lose: '3',
-    pf: '50',
-    pa: '75',
-    pd: '-25',
-    p: '8'},{postion: '5',
-    team: 'greenberg packers',
-    played: '3',
-    win: '3',
-    draw: '5',
-    lose: '3',
-    pf: '50',
-    pa: '75',
-    pd: '-25',
-    p: '8'},{postion: '6',
-    team: 'esampdoria',
-    played: '3',
-    win: '3',
-    draw: '5',
-    lose: '3',
-    pf: '50',
-    pa: '75',
-    pd: '-25',
-    p: '8'},
-    {postion: '7',
-    team: 'alfonso mango',
-    played: '3',
-    win: '3',
-    draw: '5',
-    lose: '3',
-    pf: '50',
-    pa: '75',
-    pd: '-25',
-    p: '8'},{postion: '8',
-    team: 'jimboks squash',
-    played: '3',
-    win: '3',
-    draw: '5',
-    lose: '3',
-    pf: '50',
-    pa: '75',
-    pd: '-25',
-    p: '8'}]
-  })
+  this.getTable()
+  // this.setState({
+  //   table: [{
+  //     postion: '1',
+  //     team: 'chadrington',
+  //     played: '3',
+  //     win: '3',
+  //     draw: '5',
+  //     lose: '3',
+  //     pf: '50',
+  //     pa: '75',
+  //     pd: '-25',
+  //     p: '8'
+  //   },{postion: '2',
+  //   team: 'richies rovers',
+  //   played: '3',
+  //   win: '3',
+  //   draw: '5',
+  //   lose: '3',
+  //   pf: '50',
+  //   pa: '75',
+  //   pd: '-25',
+  //   p: '8'},{postion: '3',
+  //   team: 'fortuna muzzeldorf',
+  //   played: '4',
+  //   win: '3',
+  //   draw: '5',
+  //   lose: '3',
+  //   pf: '50',
+  //   pa: '75',
+  //   pd: '-25',
+  //   p: '8'},{postion: '4',
+  //   team: 'brumbies squash',
+  //   played: '3',
+  //   win: '3',
+  //   draw: '5',
+  //   lose: '3',
+  //   pf: '50',
+  //   pa: '75',
+  //   pd: '-25',
+  //   p: '8'},{postion: '5',
+  //   team: 'greenberg packers',
+  //   played: '3',
+  //   win: '3',
+  //   draw: '5',
+  //   lose: '3',
+  //   pf: '50',
+  //   pa: '75',
+  //   pd: '-25',
+  //   p: '8'},{postion: '6',
+  //   team: 'esampdoria',
+  //   played: '3',
+  //   win: '3',
+  //   draw: '5',
+  //   lose: '3',
+  //   pf: '50',
+  //   pa: '75',
+  //   pd: '-25',
+  //   p: '8'},
+  //   {postion: '7',
+  //   team: 'alfonso mango',
+  //   played: '3',
+  //   win: '3',
+  //   draw: '5',
+  //   lose: '3',
+  //   pf: '50',
+  //   pa: '75',
+  //   pd: '-25',
+  //   p: '8'},{postion: '8',
+  //   team: 'jimboks squash',
+  //   played: '3',
+  //   win: '3',
+  //   draw: '5',
+  //   lose: '3',
+  //   pf: '50',
+  //   pa: '75',
+  //   pd: '-25',
+  //   p: '8'}]
+  // })
 }
 
       getTable() {
@@ -125,24 +125,30 @@ componentDidMount() {
     renderTableData() {
       this.state.table.shift()
       return this.state.table.map((player, index) => {
-        const { postion, team, played, win, draw, lose, pf, pa, pd, p } = player
+        // const { postion, team, played, win, draw, lose, pf, pa, pd, p } = player
          return (
               <tr className='table-hover' style={this.style(player)} key={index}>
-               <td>{postion}</td>
+               <td>{player[0]}</td>
                <Link className='link-style' to={{
               pathname: `/player/${player[10]}/${player[1]}`,
               state: {
-                  playerId: player[10]
+                  playerId: player[10],
+                  played: player[2],
+                  win: player[3],
+                  draw: player[4],
+                  loss: player[5],
+                  pointsDifference: player[8],
+                  points: player[9]
               }
-               }}><td>{team}</td></Link>
-               <td>{played}</td>
-               <td>{win}</td>
-               <td>{draw}</td>
-               <td>{lose}</td>
-               <td>{pf}</td>
-               <td>{pa}</td>
-               <td>{pd}</td>
-               <td>{p}</td>
+               }}><td>{player[1]}</td></Link>
+               <td>{player[2]}</td>
+               <td>{player[3]}</td>
+               <td>{player[4]}</td>
+               <td>{player[5]}</td>
+               <td>{player[6]}</td>
+               <td>{player[7]}</td>
+               <td>{player[8]}</td>
+               <td>{player[9]}</td>
             </tr>
          )
       })

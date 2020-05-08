@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../styles.css'
+import '../../styles/styles.css'
 import Titanic from "../../photos_and_videos/season18_19_highlights/titanic.mp4";
 import RacketGate from "../../photos_and_videos/season18_19_highlights/racketGate.mp4";
 import brumbiesUpset from "../../photos_and_videos/season18_19_highlights/brumbiesUpset.mp4";

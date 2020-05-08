@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
-import '../styles.css'
+import '../styles/styles.css'
 import Figure from 'react-bootstrap/Figure'
 import Charlie from "../photos_and_videos/about/charlie.jpg"
 import Jinks from "../photos_and_videos/about/jinks.jpg"

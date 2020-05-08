@@ -2,6 +2,7 @@
 
 body {
   font-family: montserrat;
+  background: -webkit-linear-gradient(left, #ebebf0, #c7e6ee);
   }
   
   .sidenav {
@@ -458,7 +459,7 @@ font-weight: bold;
 
 .link-style {
 border: none;
-color: tomato;
+color: rgba(211, 145, 5, 0.678);
 font-weight: bold;
 }
 }

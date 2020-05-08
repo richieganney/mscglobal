@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import About from './components/About'
 import Season18_19 from './components/SeasonHighlights/Season18_19'
 import Homepage from './components/Homepage/Homepage';
-import './styles.css'
+import './styles/styles.css'
 import AllTables from './components/TablesAndResults/AllTables';
 import AllTeams from './components/AllTeams';
 import SocialInfo from './components/SocialInfo';

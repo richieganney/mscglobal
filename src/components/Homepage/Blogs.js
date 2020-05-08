@@ -5,7 +5,7 @@ import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from
 import ViewBlog from './ViewBlog';
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
-import '../../styles.css'
+import '../../styles/styles.css'
 
 class Blogs extends React.Component {
   constructor() {

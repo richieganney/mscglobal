@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
-import '../../styles.css'
+import '../../styles/styles.css'
 
 class ViewBlog extends React.Component {
   constructor() {
