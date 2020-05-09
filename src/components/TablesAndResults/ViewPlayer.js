@@ -146,7 +146,7 @@ class ViewPlayer extends React.Component {
             const form = this.shuffle(arr)
             return form.map((game, index) => {
                 return (
-                <p key={index} style={this.style(game)}>{game}</p>
+                <span><p key={index} style={this.style(game)}>{game}</p>{' '}</span>
                 )
             });
         } else {
