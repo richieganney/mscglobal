@@ -68,12 +68,22 @@ class ViewPlayer extends React.Component {
     }
 
     winRate(){
+        if(this.props.location.state.played == "Retired"){
+            return (
+            <p>rt ^</p>
+            )
+        }
         const { played, win } = this.props.location.state
         const finalNum = (Number(win)/Number(played)) * 100
-        return Math.round(finalNum);
+        return `${Math.round(finalNum)}%`
     }
 
     pointsDropped(){
+        if(this.props.location.state.played == "Retired"){
+            return (
+            <p>rt ^</p>
+            )
+        }
         const { played, points } = this.props.location.state
         const totalPoints = played * 3
         const finalNum = totalPoints - points
@@ -81,6 +91,11 @@ class ViewPlayer extends React.Component {
     }
 
     averagePdPerGame(){
+        if(this.props.location.state.played == "Retired"){
+            return (
+            <p>rt ^</p>
+            )
+        }
       const { played, pointsDifference } = this.props.location.state
       const average = pointsDifference / played
       if(average > 1){
@@ -88,6 +103,59 @@ class ViewPlayer extends React.Component {
       } else {
           return `${Math.round(average)}`
       }
+    }
+
+    shuffle = (a) => {
+        var j, x, i;
+        for (i = a.length - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * (i + 1));
+            x = a[i];
+            a[i] = a[j];
+            a[j] = x;
+        }
+        return a;
+    }
+
+    style = (game) => {
+        if(game == "W"){
+            return { color: 'green', display: 'inline-block' }
+        } else if(game === "D"){
+            return { color: 'grey', display: 'inline-block' }
+        } else {
+            return { color: 'red', display: 'inline-block' }
+        }
+    }
+
+    form(win, draw, loss, played) {
+        if(played == "Retired"){
+            return (
+            <p>{this.state.name} has Retired</p>
+            )
+        }
+        const arr = `${"W,".repeat(win)}${"D,".repeat(draw)}${"L,".repeat(loss)}`.split(",")
+        arr.pop()
+        if(arr.length == 0){
+            return (
+            <p>
+            No data yet
+            </p>
+            )
+        } else if(arr.length <= 5){
+            const form = this.shuffle(arr)
+            return form.map((game, index) => {
+                return (
+                <p key={index} style={this.style(game)}>{game}</p>
+                )
+            });
+        } else {
+            this.shuffle(arr)
+            const form = arr.slice(Math.max(arr.length - 5, 1))
+            return form.map((game, index) => {
+                return (
+                <span><p key={index} style={this.style(game)}>{game}</p>{' '}</span>
+                )
+            });
+        }
     }
 
   playerImage(){
@@ -151,7 +219,7 @@ class ViewPlayer extends React.Component {
                             <p class="proile-rating">RANKINGS : <span>{rankings}</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <h3>Stats 2019/2020</h3>
+                                    <h3>Stats</h3>
                                 </li>
                             </ul>
                         </div>
@@ -175,10 +243,10 @@ class ViewPlayer extends React.Component {
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>All Games</label>
+                                                <label>Form</label>
                                             </div>
                                             <div class="col-md-6">
-                                            <p><span style={green}>{win}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style={amber}>{draw}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style={red}>{loss}</span></p>
+                                                {this.form(win, draw, loss, played)}
                                             </div>
                                         </div>
                                         <div class="row">
@@ -186,7 +254,7 @@ class ViewPlayer extends React.Component {
                                                 <label>Win Rate</label>
                                             </div>
                                             <div class="col-md-6">
-                                            <p>{this.winRate()}%</p>
+                                            <p>{this.winRate()}</p>
                                             </div>
                                         </div>
                                         <div class="row">
