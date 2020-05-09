@@ -5,18 +5,19 @@ import MSC from '../photos_and_videos/new_logo.png'
 class NavBar extends Component {
     render() {
         return (
-            <div id="navBar">
+            <div id="navBar" className='navBar'>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='container-fluid'>
                 <Navbar.Brand href="/">
                 <img
                     src={MSC}
                     alt="Squash Logo"
-                    className="rounded-circle z-depth-1 img-fluid"
+                    // className="rounded-circle z-depth-1 img-fluid"
+                    className='home-button-nav'
                     width={45}
                     height={10}
                 />
                 </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                     <div id="tables"><Nav.Link href="/tables">Tables</Nav.Link></div>

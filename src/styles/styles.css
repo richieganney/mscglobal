@@ -131,6 +131,22 @@ body {
 
 @media (min-width: 600px) and (max-width: 1000px) {
 
+.home-button-nav{
+height: 100px;
+width: 100px;
+}
+
+.nav-bar-toggle {
+  height: 100px;
+  width: 100px; 
+}
+
+.navBar {
+  line-height: 7rem;
+  font-family: montserrat;
+  font-size: 50px;
+}
+
 .photo-slider {
     position: absolute;
     width: 150%;
