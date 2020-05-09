@@ -31,7 +31,8 @@ class ViewPlayer extends React.Component {
         rankings: '',
         quote: '',
         beer: '',
-        byDay: ''
+        byDay: '',
+        socialLinks: ''
     };
   }
 
@@ -51,12 +52,13 @@ class ViewPlayer extends React.Component {
                         role: res.data.values[0][3],
                         additional: res.data.values[0][4],
                         rankings: res.data.values[0][5],
-                        socialLinks: res.data.values[0][6],
+                        socialLinks: res.data.values[0][6].split(','),
                         quote: res.data.values[0][7],
                         beer: res.data.values[0][8],
                         byDay: res.data.values[0][9],
-                        playerLoaded: true
+                        playerLoaded: true,
         })
+        console.log(this.state.socialLinks)
     })
     .catch(error => {
         console.log(error)
@@ -193,7 +195,7 @@ class ViewPlayer extends React.Component {
   }
 
   render() {
-    const { name, description, image, role, additional, rankings, quote, beer, byDay } = this.state
+    const { name, description, image, role, additional, rankings, quote, beer, byDay, socialLinks } = this.state
     const { played, win, draw, loss, pointsDifference, points } = this.props.location.state
     return (
         <div>
@@ -229,9 +231,8 @@ class ViewPlayer extends React.Component {
                     <div class="col-md-4">
                         <div class="profile-work">
                             <p>LINKS</p>
-                            <a href="">LinkedIn</a><br/>
-                            <a href="">Instagram</a><br/>
-                            <a href="">Facebook</a>
+                            <a href={socialLinks[0]}>LinkedIn</a><br/>
+                            <a href={socialLinks[1]}>Instagram</a><br/>
                             <p>FROM THE PLAYERS THEMSELVES</p>
                             <h7><span className='additional-player-info'>Quote:</span> {quote}</h7><br/>
                             <h7><span className='additional-player-info'>Beer:</span> {beer}</h7><br/>
