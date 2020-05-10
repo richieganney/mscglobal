@@ -286,15 +286,4 @@ class ViewPlayer extends React.Component {
   }
 }
 
-const green = {
-    color: 'green'
-}
-
-const amber = {
-    color: 'orange'
-}
-
-const red = {
-    color: 'red'
-}
 export default ViewPlayer;
