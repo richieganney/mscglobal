@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import MSC from '../photos_and_videos/new_logo.png'
+import LoginButton from './Users/LoginButton';
 
 class NavBar extends Component {
     render() {
@@ -36,6 +37,7 @@ class NavBar extends Component {
                     <div id="match-reports"><Nav.Link eventKey={2} href="/match-reports">
                     Match Reports
                     </Nav.Link></div>
+                    <div><Nav.Link><LoginButton></LoginButton></Nav.Link></div>
                     </Nav>
                     </Navbar.Collapse>
                 </Navbar>
