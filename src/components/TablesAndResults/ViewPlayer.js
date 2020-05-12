@@ -25,14 +25,15 @@ class ViewPlayer extends React.Component {
         playerLoaded: false,
         name: '',
         description: '',
-        image: '',
         role: '',
-        additional: '',
         rankings: '',
         quote: '',
         beer: '',
         byDay: '',
-        socialLinks: ''
+        socialLinks: '',
+        pub: '',
+        bestMoment: '',
+        aspiration: ''
     };
   }
 
@@ -42,20 +43,21 @@ class ViewPlayer extends React.Component {
 
   getPlayer(){
     const playerId = this.props.match.params.playerId
-    const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet2!A${playerId}:J${playerId}?key=${process.env.REACT_APP_SHEETS_API_KEY}`
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet2!A${playerId}:K${playerId}?key=${process.env.REACT_APP_SHEETS_API_KEY}`
     axios.get(url)
     .then(res => {
         this.setState({ player: res.data.values,
                         name: res.data.values[0][0],
                         description: res.data.values[0][1],
-                        image: res.data.values[0][2],
-                        role: res.data.values[0][3],
-                        additional: res.data.values[0][4],
-                        rankings: res.data.values[0][5],
-                        socialLinks: res.data.values[0][6].split(','),
-                        quote: res.data.values[0][7],
-                        beer: res.data.values[0][8],
-                        byDay: res.data.values[0][9],
+                        role: res.data.values[0][2],
+                        rankings: res.data.values[0][3],
+                        socialLinks: res.data.values[0][4].split(','),
+                        quote: res.data.values[0][5],
+                        pub: res.data.values[0][6],
+                        beer: res.data.values[0][7],
+                        bestMoment: res.data.values[0][8],
+                        aspiration: res.data.values[0][9],
+                        byDay: res.data.values[0][10],
                         playerLoaded: true,
         })
         console.log(this.state.socialLinks)
@@ -195,7 +197,7 @@ class ViewPlayer extends React.Component {
   }
 
   render() {
-    const { name, description, image, role, additional, rankings, quote, beer, byDay, socialLinks } = this.state
+    const { name, description, role, rankings, quote, beer, pub, aspiration, bestMoment, byDay, socialLinks } = this.state
     const { played, win, draw, loss, pointsDifference, points } = this.props.location.state
     return (
         <div>
@@ -211,13 +213,17 @@ class ViewPlayer extends React.Component {
                     </div>
                     <div class="col-md-6">
                         <div class="profile-head">
-                                    <h5>
+                                    <h5 style={nameStyle}>
                                     {name}
                                     </h5>
-                                    <h6>{role}</h6>
+                                    <h6 className='player-content'>{role}</h6>
                                     <h6>
                                     {description}
                                     </h6>
+                                    <h5>For the love of the game</h5>
+                                    <h6><span style={loveOPfGameStyle}>Quote {name} lives by: </span>{quote}</h6>
+                                    <h6><span style={loveOPfGameStyle}>Hero: </span>{aspiration}</h6>
+                                    <h6><span style={loveOPfGameStyle}>Best Moment at the BLC: </span>{bestMoment}</h6>
                             <p class="proile-rating">RANKINGS : <span>{rankings}</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
@@ -234,9 +240,9 @@ class ViewPlayer extends React.Component {
                             <a href={socialLinks[0]}>LinkedIn</a><br/>
                             <a href={socialLinks[1]}>Instagram</a><br/>
                             <p>FROM THE PLAYERS THEMSELVES</p>
-                            <h7><span className='additional-player-info'>Quote:</span> {quote}</h7><br/>
-                            <h7><span className='additional-player-info'>Beer:</span> {beer}</h7><br/>
-                            <h7><span className='additional-player-info'>By day?</span> {byDay}</h7><br/>
+                            <h7><span className='additional-player-info'>Day job:</span> {byDay}</h7><br/>
+                            <h7><span className='additional-player-info'>Favourite Pub:</span> {pub}</h7><br/>
+                            <h7><span className='additional-player-info'>Beverage choice at {pub}:</span> {beer}</h7><br/>
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -284,6 +290,15 @@ class ViewPlayer extends React.Component {
         </div>
     );
   }
+}
+
+const loveOPfGameStyle = {
+    fontWeight: 'bold',
+    color: 'black'
+}
+
+const nameStyle = {
+    fontSize: '50px'
 }
 
 export default ViewPlayer;

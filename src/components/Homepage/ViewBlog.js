@@ -30,7 +30,7 @@ class ViewBlog extends React.Component {
 }
 
   render() {
-    const { date, title, content, excerpt, like_count } = this.state.blog
+    const { date, title, content, like_count } = this.state.blog
     return (
         <div>
           {this.state.blogLoaded === true ? 
