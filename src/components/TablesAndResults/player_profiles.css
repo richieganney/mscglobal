@@ -1,3 +1,4 @@
+/* DESKTOP CSS */
 
 .emp-profile{
     padding: 3%;
@@ -77,7 +78,7 @@
 }
 .profile-work{
     padding: 14%;
-    margin-top: -15%;
+    margin-top: -90%;
     font-family: montserrat;
 }
 .profile-work p{
@@ -123,4 +124,21 @@
 
 .player-content {
     color: #7B67C9;
+}
+
+
+
+
+
+
+
+
+/* MOBILE CSS */
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .profile-work{
+        padding: 14%;
+        margin-top: -200%;
+        font-family: montserrat;
+    }
 }

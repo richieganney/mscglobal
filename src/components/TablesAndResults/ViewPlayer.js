@@ -216,14 +216,14 @@ class ViewPlayer extends React.Component {
                                     <h5 style={nameStyle}>
                                     {name}
                                     </h5>
-                                    <h6 className='player-content'>{role}</h6>
-                                    <h6>
+                                    <h6 style={contentStyle}>{role}</h6>
+                                    <h6 style={contentStyle}>
                                     {description}
                                     </h6>
                                     <h5>For the love of the game</h5>
-                                    <h6><span style={loveOPfGameStyle}>Quote {name} lives by: </span>{quote}</h6>
-                                    <h6><span style={loveOPfGameStyle}>Hero: </span>{aspiration}</h6>
-                                    <h6><span style={loveOPfGameStyle}>Best Moment at the BLC: </span>{bestMoment}</h6>
+                                    <h6 style={contentStyle}><span className='additional-player-info'>Quote {name} lives by: </span>{quote}</h6>
+                                    <h6 style={contentStyle}><span className='additional-player-info'>Hero: </span>{aspiration}</h6>
+                                    <h6 style={contentStyle}><span className='additional-player-info'>Best Moment at the BLC: </span>{bestMoment}</h6>
                             <p class="proile-rating">RANKINGS : <span>{rankings}</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
@@ -239,7 +239,7 @@ class ViewPlayer extends React.Component {
                             <p>LINKS</p>
                             <a href={socialLinks[0]}>LinkedIn</a><br/>
                             <a href={socialLinks[1]}>Instagram</a><br/>
-                            <p>FROM THE PLAYERS THEMSELVES</p>
+                            <p>OUTSIDE OF THE BLC...</p>
                             <h7><span className='additional-player-info'>Day job:</span> {byDay}</h7><br/>
                             <h7><span className='additional-player-info'>Favourite Pub:</span> {pub}</h7><br/>
                             <h7><span className='additional-player-info'>Beverage choice at {pub}:</span> {beer}</h7><br/>
@@ -250,7 +250,7 @@ class ViewPlayer extends React.Component {
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Form</label>
+                                                <label className='additional-player-info'>Form</label>
                                             </div>
                                             <div class="col-md-6">
                                                 {this.form(win, draw, loss, played)}
@@ -258,26 +258,26 @@ class ViewPlayer extends React.Component {
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Win Rate</label>
+                                                <label className='additional-player-info'>Win Rate</label>
                                             </div>
                                             <div class="col-md-6">
-                                            <p>{this.winRate()}</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Points Dropped</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                        <p>{this.pointsDropped()}</p>
+                                            <p style={contentStyle}>{this.winRate()}</p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Average PD per game</label>
+                                                <label className='additional-player-info'>Points Dropped</label>
                                             </div>
                                             <div class="col-md-6">
-                                        <p>{this.averagePdPerGame()}</p>
+                                        <p style={contentStyle}>{this.pointsDropped()}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label className='additional-player-info'>Average PD per game</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                        <p style={contentStyle}>{this.averagePdPerGame()}</p>
                                             </div>
                                         </div>
                             </div>
@@ -299,6 +299,10 @@ const loveOPfGameStyle = {
 
 const nameStyle = {
     fontSize: '50px'
+}
+
+const contentStyle = {
+    color: '#7B67C9'
 }
 
 export default ViewPlayer;
