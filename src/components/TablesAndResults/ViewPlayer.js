@@ -14,6 +14,7 @@ import Jimbok from '../../photos_and_videos/all_teams/jimbok.jpeg';
 import Murf from '../../photos_and_videos/all_teams/bournmurf.jpeg';
 import Chadrington from '../../photos_and_videos/all_teams/chadrington.jpeg';
 import Muzzeldorf from '../../photos_and_videos/all_teams/muzzeldorf.jpeg';
+import { MDBIcon } from 'mdbreact';
 
 import { PieChart } from 'react-minimal-pie-chart';
 
@@ -216,7 +217,7 @@ class ViewPlayer extends React.Component {
                                     <h5 style={nameStyle}>
                                     {name}
                                     </h5>
-                                    <h6 style={contentStyle}>{role}</h6>
+                                    <h6 style={roleStyle}>{role}</h6>
                                     <h6 style={contentStyle}>
                                     {description}
                                     </h6>
@@ -237,12 +238,12 @@ class ViewPlayer extends React.Component {
                     <div class="col-md-4">
                         <div class="profile-work">
                             <p>LINKS</p>
-                            <a href={socialLinks[0]}>LinkedIn</a><br/>
-                            <a href={socialLinks[1]}>Instagram</a><br/>
+                            <a href={socialLinks[0]}>LinkedIn <MDBIcon fab icon="linkedin" className="blue-text" /></a><br/>
+                            <a href={socialLinks[1]}>Instagram <MDBIcon fab icon="instagram" className="blue-text" /></a><br/>
                             <p>OUTSIDE OF THE BLC...</p>
                             <h7><span className='additional-player-info'>Day job:</span> {byDay}</h7><br/>
                             <h7><span className='additional-player-info'>Favourite Pub:</span> {pub}</h7><br/>
-                            <h7><span className='additional-player-info'>Beverage choice at {pub}:</span> {beer}</h7><br/>
+                            <h7><span className='additional-player-info'>Beverage choice:</span> {beer}</h7><br/>
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -280,6 +281,14 @@ class ViewPlayer extends React.Component {
                                         <p style={contentStyle}>{this.averagePdPerGame()}</p>
                                             </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label className='additional-player-info'>Best finish in virtual cup 2020</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                        <p style={contentStyle}>1st place</p>
+                                            </div>
+                                        </div>
                             </div>
                         </div>
                     </div>
@@ -303,6 +312,12 @@ const nameStyle = {
 
 const contentStyle = {
     color: '#7B67C9'
+}
+
+const roleStyle = {
+    color: '#7B67C9',
+    fontWeight: 'bold',
+    fontSize: '30px'
 }
 
 export default ViewPlayer;
