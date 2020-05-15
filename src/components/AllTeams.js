@@ -14,6 +14,7 @@ import Murf from '../photos_and_videos/all_teams/bournmurf.jpeg';
 import Chadrington from '../photos_and_videos/all_teams/chadrington.jpeg';
 import Muzzeldorf from '../photos_and_videos/all_teams/muzzeldorf.jpeg';
 import Shorn from '../photos_and_videos/all_teams/shorn_hub.jpeg';
+import Cowracens from '../photos_and_videos/all_teams/cowracens.jpeg';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -32,7 +33,7 @@ class AllTeams extends Component {
     }
 
     getPlayer() {
-        const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet1!A2:K14?key=${process.env.REACT_APP_SHEETS_API_KEY}`
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet1!A2:K15?key=${process.env.REACT_APP_SHEETS_API_KEY}`
         axios.get(url)
         .then(res => {
             this.setState({ players: res.data.values, playersLoaded: true });
@@ -99,6 +100,8 @@ class AllTeams extends Component {
                 return FiveClive
             } else if(name == "Club Ned Ninks"){
                 return NedJinks
+            } else if(name == "Cowracens"){
+                return Cowracens
             }
             else {
                 return Mangos

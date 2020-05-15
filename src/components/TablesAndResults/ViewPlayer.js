@@ -14,6 +14,8 @@ import Jimbok from '../../photos_and_videos/all_teams/jimbok.jpeg';
 import Murf from '../../photos_and_videos/all_teams/bournmurf.jpeg';
 import Chadrington from '../../photos_and_videos/all_teams/chadrington.jpeg';
 import Muzzeldorf from '../../photos_and_videos/all_teams/muzzeldorf.jpeg';
+import Cowracens from '../../photos_and_videos/all_teams/cowracens.jpeg';
+
 import { MDBIcon } from 'mdbreact';
 
 class ViewPlayer extends React.Component {
@@ -73,7 +75,7 @@ class ViewPlayer extends React.Component {
     }
 
     winRate(){
-        if(this.props.location.state.played == "Retired"){
+        if(this.props.location.state.played.toLowerCase() == "retired" || "sitting out"){
             return (
             <p>rt ^</p>
             )
@@ -84,7 +86,7 @@ class ViewPlayer extends React.Component {
     }
 
     pointsDropped(){
-        if(this.props.location.state.played == "Retired"){
+        if(this.props.location.state.played.toLowerCase() == "retired" || "Sitting out"){
             return (
             <p>rt ^</p>
             )
@@ -96,7 +98,7 @@ class ViewPlayer extends React.Component {
     }
 
     averagePdPerGame(){
-        if(this.props.location.state.played == "Retired"){
+        if(this.props.location.state.played.toLowerCase() == "retired" || "sitting out"){
             return (
             <p>rt ^</p>
             )
@@ -132,9 +134,9 @@ class ViewPlayer extends React.Component {
     }
 
     form(win, draw, loss, played) {
-        if(played == "Retired"){
+        if(played == "retired" || "sitting out"){
             return (
-            <p>{this.state.name} has Retired</p>
+            <p>{this.state.name} is {played}</p>
             )
         }
         const arr = `${"W,".repeat(win)}${"D,".repeat(draw)}${"L,".repeat(loss)}`.split(",")
@@ -191,6 +193,8 @@ class ViewPlayer extends React.Component {
         return NedJinks
     } else if(name == "BBC Radio 5 Clive") {
         return FiveClive
+    } else if(name == "Cowracens"){
+        return Cowracens
     }
     else {
         return Mangos
