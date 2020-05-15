@@ -16,8 +16,6 @@ import Chadrington from '../../photos_and_videos/all_teams/chadrington.jpeg';
 import Muzzeldorf from '../../photos_and_videos/all_teams/muzzeldorf.jpeg';
 import { MDBIcon } from 'mdbreact';
 
-import { PieChart } from 'react-minimal-pie-chart';
-
 class ViewPlayer extends React.Component {
   constructor() {
     super();
@@ -34,7 +32,8 @@ class ViewPlayer extends React.Component {
         socialLinks: '',
         pub: '',
         bestMoment: '',
-        aspiration: ''
+        aspiration: '',
+        bestFinish: ''
     };
   }
 
@@ -44,7 +43,7 @@ class ViewPlayer extends React.Component {
 
   getPlayer(){
     const playerId = this.props.match.params.playerId
-    const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet2!A${playerId}:K${playerId}?key=${process.env.REACT_APP_SHEETS_API_KEY}`
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet2!A${playerId}:M${playerId}?key=${process.env.REACT_APP_SHEETS_API_KEY}`
     axios.get(url)
     .then(res => {
         this.setState({ player: res.data.values,
@@ -59,9 +58,10 @@ class ViewPlayer extends React.Component {
                         bestMoment: res.data.values[0][8],
                         aspiration: res.data.values[0][9],
                         byDay: res.data.values[0][10],
+                        bestFinish: res.data.values[0][12],
                         playerLoaded: true,
         })
-        console.log(this.state.socialLinks)
+        console.log(this.state)
     })
     .catch(error => {
         console.log(error)
@@ -198,7 +198,7 @@ class ViewPlayer extends React.Component {
   }
 
   render() {
-    const { name, description, role, rankings, quote, beer, pub, aspiration, bestMoment, byDay, socialLinks } = this.state
+    const { name, description, role, rankings, quote, beer, pub, aspiration, bestMoment, byDay, socialLinks, bestFinish } = this.state
     const { played, win, draw, loss, pointsDifference, points } = this.props.location.state
     return (
         <div>
@@ -237,7 +237,7 @@ class ViewPlayer extends React.Component {
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-work">
-                            <p>LINKS</p>
+                            <p>SOCIALS</p>
                             <a href={socialLinks[0]}>LinkedIn <MDBIcon fab icon="linkedin" className="blue-text" /></a><br/>
                             <a href={socialLinks[1]}>Instagram <MDBIcon fab icon="instagram" className="blue-text" /></a><br/>
                             <p>OUTSIDE OF THE BLC...</p>
@@ -286,7 +286,7 @@ class ViewPlayer extends React.Component {
                                                 <label className='additional-player-info'>Best finish in virtual cup 2020</label>
                                             </div>
                                             <div class="col-md-6">
-                                        <p style={contentStyle}>1st place</p>
+                                        <p style={contentStyle}>{bestFinish}</p>
                                             </div>
                                         </div>
                             </div>

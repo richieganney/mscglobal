@@ -32,7 +32,7 @@ class AllTeams extends Component {
     }
 
     getPlayer() {
-        const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet1!A1:K14?key=${process.env.REACT_APP_SHEETS_API_KEY}`
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet1!A2:K14?key=${process.env.REACT_APP_SHEETS_API_KEY}`
         axios.get(url)
         .then(res => {
             this.setState({ players: res.data.values, playersLoaded: true });
