@@ -15,6 +15,7 @@ import Murf from '../../photos_and_videos/all_teams/bournmurf.jpeg';
 import Chadrington from '../../photos_and_videos/all_teams/chadrington.jpeg';
 import Muzzeldorf from '../../photos_and_videos/all_teams/muzzeldorf.jpeg';
 import Cowracens from '../../photos_and_videos/all_teams/cowracens.jpeg';
+import Popup from "reactjs-popup";
 
 import { MDBIcon } from 'mdbreact';
 
@@ -35,7 +36,8 @@ class ViewPlayer extends React.Component {
         pub: '',
         bestMoment: '',
         aspiration: '',
-        bestFinish: ''
+        bestFinish: '',
+        commitment: ''
     };
   }
 
@@ -45,7 +47,7 @@ class ViewPlayer extends React.Component {
 
   getPlayer(){
     const playerId = this.props.match.params.playerId
-    const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet2!A${playerId}:M${playerId}?key=${process.env.REACT_APP_SHEETS_API_KEY}`
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.REACT_APP_SHEET_ID}/values/Sheet2!A${playerId}:N${playerId}?key=${process.env.REACT_APP_SHEETS_API_KEY}`
     axios.get(url)
     .then(res => {
         this.setState({ player: res.data.values,
@@ -61,6 +63,7 @@ class ViewPlayer extends React.Component {
                         aspiration: res.data.values[0][9],
                         byDay: res.data.values[0][10],
                         bestFinish: res.data.values[0][12],
+                        commitment: res.data.values[0][13],
                         playerLoaded: true,
         })
         console.log(this.state)
@@ -75,10 +78,10 @@ class ViewPlayer extends React.Component {
     }
 
     winRate(){
-        const status = this.props.location.state.played.toLowerCase()
+        const status = this.props.location.state.position.toLowerCase()
         if(status.toLowerCase() === "retired" || status.toLowerCase() === "sitting out temporarily"){
             return (
-            <p>rt ^</p>
+            <p style={contentStyle}>rt ^</p>
             )
         }
         const { played, win } = this.props.location.state
@@ -87,10 +90,10 @@ class ViewPlayer extends React.Component {
     }
 
     pointsDropped(){
-        const status = this.props.location.state.played.toLowerCase()
+        const status = this.props.location.state.position.toLowerCase()
         if(status.toLowerCase() === "retired" || status.toLowerCase() === "sitting out temporarily"){
             return (
-            <p>rt ^</p>
+            <p style={contentStyle}>rt ^</p>
             )
         }
         const { played, points } = this.props.location.state
@@ -100,10 +103,10 @@ class ViewPlayer extends React.Component {
     }
 
     averagePdPerGame(){
-        const status = this.props.location.state.played.toLowerCase()
+        const status = this.props.location.state.position.toLowerCase()
         if(status.toLowerCase() === "retired" || status.toLowerCase() === "sitting out temporarily"){
             return (
-            <p>rt ^</p>
+            <p style={contentStyle}>rt ^</p>
             )
         }
       const { played, pointsDifference } = this.props.location.state
@@ -137,9 +140,10 @@ class ViewPlayer extends React.Component {
     }
 
     form(win, draw, loss, played) {
-        if(played.toLowerCase() === "retired" || played.toLowerCase() === "sitting out temporarily"){
+        const status = this.props.location.state.position.toLowerCase()
+        if(status === "retired" || status === "sitting out temporarily"){
             return (
-            <p>{this.state.name} is {played}</p>
+            <p style={contentStyle}>{this.state.name} is {status}</p>
             )
         }
         const arr = `${"W,".repeat(win)}${"D,".repeat(draw)}${"L,".repeat(loss)}`.split(",")
@@ -167,6 +171,16 @@ class ViewPlayer extends React.Component {
             });
         }
     }
+
+    mscglobalRanking(){
+        const commitmentInflation = 8.1
+        const { played, pointsDifference, points } = this.props.location.state
+        const { commitment } = this.state
+        const squashAbility = (points / played) * (pointsDifference / played)
+        const squashCommitment = (Number(commitment) * commitmentInflation)
+        const mscglobalRanking = ((squashAbility + squashCommitment) / 162) * 100
+        return Math.round(mscglobalRanking)
+    };
 
   playerImage(){
     const { name } = this.state
@@ -232,7 +246,9 @@ class ViewPlayer extends React.Component {
                                     <h6 style={contentStyle}><span className='additional-player-info'>Quote {name} lives by: </span>{quote}</h6>
                                     <h6 style={contentStyle}><span className='additional-player-info'>Hero: </span>{aspiration}</h6>
                                     <h6 style={contentStyle}><span className='additional-player-info'>Best Moment at the BLC: </span>{bestMoment}</h6>
-                            <p class="proile-rating">BLC Temp Gauge: <span>{rankings}</span></p>
+                                    <Popup trigger={<button className='popup-button-style'><p className="proile-rating">BLC Temp Gauge: <span style={rankingSpanStyle}>{this.mscglobalRanking()}%</span></p></button>}>
+                                    <div>This is a complex calculation which combines squash ability and commitment to the MSC</div>
+                                    </Popup>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <h3>Stats</h3>
@@ -325,6 +341,11 @@ const roleStyle = {
     color: '#7B67C9',
     fontWeight: 'bold',
     fontSize: '30px'
+}
+
+const rankingSpanStyle = {
+    color: '#ffffff',
+    fontWeight: 'bold'
 }
 
 export default ViewPlayer;

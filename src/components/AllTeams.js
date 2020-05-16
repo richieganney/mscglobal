@@ -51,6 +51,7 @@ class AllTeams extends Component {
               pathname: `/player/${player[10]}/${player[1]}`,
               state: {
                   playerId: player[10],
+                  position: player[0],
                   played: player[2],
                   win: player[3],
                   draw: player[4],
