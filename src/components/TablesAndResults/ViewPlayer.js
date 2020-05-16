@@ -75,7 +75,8 @@ class ViewPlayer extends React.Component {
     }
 
     winRate(){
-        if(this.props.location.state.played.toLowerCase() == "retired" || "sitting out"){
+        const status = this.props.location.state.played.toLowerCase()
+        if(status.toLowerCase() === "retired" || status.toLowerCase() === "sitting out temporarily"){
             return (
             <p>rt ^</p>
             )
@@ -86,7 +87,8 @@ class ViewPlayer extends React.Component {
     }
 
     pointsDropped(){
-        if(this.props.location.state.played.toLowerCase() == "retired" || "Sitting out"){
+        const status = this.props.location.state.played.toLowerCase()
+        if(status.toLowerCase() === "retired" || status.toLowerCase() === "sitting out temporarily"){
             return (
             <p>rt ^</p>
             )
@@ -98,7 +100,8 @@ class ViewPlayer extends React.Component {
     }
 
     averagePdPerGame(){
-        if(this.props.location.state.played.toLowerCase() == "retired" || "sitting out"){
+        const status = this.props.location.state.played.toLowerCase()
+        if(status.toLowerCase() === "retired" || status.toLowerCase() === "sitting out temporarily"){
             return (
             <p>rt ^</p>
             )
@@ -134,7 +137,7 @@ class ViewPlayer extends React.Component {
     }
 
     form(win, draw, loss, played) {
-        if(played == "retired" || "sitting out"){
+        if(played.toLowerCase() === "retired" || played.toLowerCase() === "sitting out temporarily"){
             return (
             <p>{this.state.name} is {played}</p>
             )
@@ -225,11 +228,11 @@ class ViewPlayer extends React.Component {
                                     <h6 style={contentStyle}>
                                     {description}
                                     </h6>
-                                    <h5>For the love of the game</h5>
+                                    <h5>Meet the Player</h5>
                                     <h6 style={contentStyle}><span className='additional-player-info'>Quote {name} lives by: </span>{quote}</h6>
                                     <h6 style={contentStyle}><span className='additional-player-info'>Hero: </span>{aspiration}</h6>
                                     <h6 style={contentStyle}><span className='additional-player-info'>Best Moment at the BLC: </span>{bestMoment}</h6>
-                            <p class="proile-rating">RANKINGS : <span>{rankings}</span></p>
+                            <p class="proile-rating">BLC Temp Gauge: <span>{rankings}</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <h3>Stats</h3>
@@ -287,7 +290,7 @@ class ViewPlayer extends React.Component {
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label className='additional-player-info'>Best finish in virtual cup 2020</label>
+                                                <label className='additional-player-info'>Best finish in virtual cup</label>
                                             </div>
                                             <div class="col-md-6">
                                         <p style={contentStyle}>{bestFinish}</p>

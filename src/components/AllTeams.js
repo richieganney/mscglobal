@@ -60,11 +60,12 @@ class AllTeams extends Component {
               }
                }}><Figure className="container">
                             <Figure.Image
+                                className="all-teams-img"
                                 width={171}
                                 height={180}
                                 alt="171x180"
                                 src={this.playerImage(player[1])}
-                                className="rounded-circle z-depth-1 img-fluid"
+                                // className="rounded-circle z-depth-1 img-fluid"
                             />
                             </Figure></Link>
                         <h5 className="font-weight-bold mt-4 mb-3">{player[1]}</h5>
