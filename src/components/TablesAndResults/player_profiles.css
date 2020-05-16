@@ -78,7 +78,7 @@
 }
 .profile-work{
     padding: 14%;
-    margin-top: -90%;
+    margin-top: -75%;
     font-family: montserrat;
 }
 .profile-work p{
@@ -169,7 +169,7 @@ transition: all 0.4s ease 0s;
 @media (min-width: 600px) and (max-width: 1000px) {
     .profile-work{
         padding: 14%;
-        margin-top: -200%;
+        margin-top: -150%;
         font-family: montserrat;
     }
 }
