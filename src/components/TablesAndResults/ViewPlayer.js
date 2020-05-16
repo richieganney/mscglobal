@@ -139,8 +139,8 @@ class ViewPlayer extends React.Component {
         }
     }
 
-    form(win, draw, loss, played) {
-        const status = this.props.location.state.position.toLowerCase()
+    form(win, draw, loss) {
+        const status = this.props.location.state
         if(status === "retired" || status === "sitting out temporarily"){
             return (
             <p style={contentStyle}>{this.state.name} is {status}</p>
@@ -277,7 +277,7 @@ class ViewPlayer extends React.Component {
                                                 <label className='additional-player-info'>Form</label>
                                             </div>
                                             <div class="col-md-6">
-                                                {this.form(win, draw, loss, played)}
+                                                {this.form(win, draw, loss)}
                                             </div>
                                         </div>
                                         <div class="row">
