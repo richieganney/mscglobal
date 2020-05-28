@@ -14,7 +14,6 @@ class ViewBlog extends React.Component {
 
   componentDidMount() {
     this.getBlog()
-    console.log("PARAMS")
   }
 
   getBlog(){
