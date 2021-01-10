@@ -275,6 +275,7 @@ width: 100px;
 
 .table-hover {
   transition: transform .1s;
+  overflow-x:auto;
 }
 
 .table-hover:hover {
@@ -293,7 +294,7 @@ width: 100px;
   text-align: center;
   font-family: montserrat;
   border-collapse: collapse;
-  border: 3px solid #ddd;
+  border: 1px solid #ddd;
   width: 100%;
 }
 
@@ -316,7 +317,7 @@ width: 100px;
 
 .link-style {
 border: none;
-color: tomato;
+color: rgb(0, 0, 0);
 font-weight: bold;
 }
 
